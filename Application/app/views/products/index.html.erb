@@ -19,7 +19,7 @@
           <td><%= button_to 'Edit Product', edit_product_path(product), method: :get %></td>
           <td><%= button_to 'Delete Product', product_path(product), method: :delete, data: {confirm: "Are you sure?"} %></td>
         </tr>
-      <% end %>
+      <% end %> 
     </tbody>
   </table>
 </div>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'Return Home', '/' %>
+<%= link_to 'Back', dashboard_path %>

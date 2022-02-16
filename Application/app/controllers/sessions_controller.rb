@@ -5,13 +5,13 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(username: params[:session][:username].downcase)
+    @member = Member.find_by(username: params[:session][:username].downcase)
     if @user && @user.authenticate(params[:session][:password])
       session[:user_type] = "Organization"
       session[:id] = @user.id
       # puts @user.id
       redirect_to '/profile'
     else
-      @member = Member.find_by(username: params[:session][:username].downcase)
       if @member && @member.authenticate(params[:session][:password])
         session[:user_type] = "Member"
         session[:id] = @member.id

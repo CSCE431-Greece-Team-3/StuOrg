@@ -18,6 +18,18 @@
 	background-color: var(--color1);
 }
 
+nav.navbar.navbar-top.navbar-expand.navbar-dark.bg-primary {
+    background-color: #500000 !important;
+}
+
+div.header.bg-primary {
+  background-color: #500000 !important;
+}
+
+a.nav-link.py-2.px-3.active {
+    background-color: #500000;
+}
+
 #nav-header {
 	padding: 20px;
 	width: 100%;
@@ -31,10 +43,33 @@
 	font-family: 'Stalemate', cursive; 
 	font-size: 40px;
 	color: var(--color1);
-    background-color: var(--color2);
+  background-color: var(--color2);
 }
 #home-btn:hover {
 	text-decoration: none;
+}
+#dropdown {
+	background-color: var(--color2);
+}
+#dropdownMenuLink {
+	font-size: 14px;
+	text-decoration: none;
+	background-color: var(--color2);
+	color: var(--color1);
+	padding: 10px;
+	text-align: center;
+}
+#no-drop a {
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	color: var(--color1);
+}
+#no-drop a:hover {
+	text-decoration: none;
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 30px;
 }
 #nav-header nav {
 	color: var(--color1);
@@ -421,4 +456,74 @@ h6 span{
 	height: 26px;
 	width: auto;
 	display: block;
+} 
+
+.border {
+  width: 50%;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  color: black;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  display: inline-flex
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  width: 50%;
+  margin: 0 auto;
+  padding: 12px;
+  color: black;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+ }
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.marketplace {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid black;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: black;
+  text-align:center;
+  transition: all 0.2s;
+  }
+  a.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+  a.button1{
+  display:block;
+  margin:0.4em auto;
+  }
+  }

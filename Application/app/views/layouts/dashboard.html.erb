@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Mporium</title>
-    <link rel="icon" href="assets/images/favicon" type="image/png">
+    <link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'argon', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body id="dash">

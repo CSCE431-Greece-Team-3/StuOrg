@@ -1,13 +1,50 @@
 
 
-<div id="nav-header" class="text-left">
+<nav id="nav-header" class="text-left">
+	
 	<div id="logo" class="text-left">
-		<a id="home-btn" href="/"><span>Mporium</span></a>
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
+		<a id="home-btn" href="/"><span> Mporium</span></a>
 	</div>
 
-	<nav>
+	<div id="logo"> </div>
+
+	<div class="dropdown show">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			PRODUCTS
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Apparel</a>
+			<a class="dropdown-item" href="#">Stationary</a>
+			<a class="dropdown-item" href="#">Events</a>
+			<a class="dropdown-item" href="#">Miscellanious</a>
+		</div>
+	</div>
+	<div class="dropdown show">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		ORGANIZATIONS
+		</a>
+		
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Academic</a>
+			<a class="dropdown-item" href="#">Arts</a>
+			<a class="dropdown-item" href="#">FLOs</a>
+			<a class="dropdown-item" href="#">Greek Life</a>
+			<a class="dropdown-item" href="#">Health/Rec</a>
+			<a class="dropdown-item" href="#">International</a>
+			<a class="dropdown-item" href="#">Professional</a>
+			<a class="dropdown-item" href="#">Political</a>
+			<a class="dropdown-item" href="#">Religious</a>
+			<a class="dropdown-item" href="#">Service</a>
+			<a class="dropdown-item" href="#">Social</a>
+			<a class="dropdown-item" href="#">Special Interest</a>
+		</div>
+	</div>
+	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
-		<a href="#">ORGANIZATIONS</a>
+	</div>
+	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
 		<div class="dropdown show">
 			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
