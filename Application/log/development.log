@@ -49618,3 +49618,456 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/favicon")
 Completed 200 OK in 296ms (Views: 295.3ms | ActiveRecord: 0.0ms | Allocations: 111664)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:25:34 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:25:36 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 11239.1ms | Allocations: 2023818)
+  Rendered layout layouts/application.html.erb (Duration: 12582.9ms | Allocations: 2393954)
+Completed 200 OK in 11242ms (Views: 11240.7ms | ActiveRecord: 0.0ms | Allocations: 2027104)
+
+
+Completed 200 OK in 12617ms (Views: 12592.9ms | ActiveRecord: 0.0ms | Allocations: 2398659)
+
+
+Started GET "/assets/argon-f1d99972b19f303c6c08dc43c4b3f1c5a78df046d4d5f487463d474b8d720728.css" for 127.0.0.1 at 2022-02-04 13:25:47 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:25:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/signup_member" for 127.0.0.1 at 2022-02-04 13:28:22 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:28:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Processing by MembersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 8364)
+  Rendered layout layouts/application.html.erb (Duration: 357.1ms | Allocations: 85667)
+Completed 200 OK in 402ms (Views: 359.7ms | ActiveRecord: 4.6ms | Allocations: 95266)
+
+
+Started POST "/members" for 127.0.0.1 at 2022-02-04 13:28:41 -0600
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6qoUmaljqyc2zabEMTXgC97jXuBbm00nGIi3xq/3YBx095Q+3WGTzG8oGskQCZgKn3tOFFvB7g8AO4TVQr0Mdg==", "member"=>{"first"=>"Rob", "last"=>"Lightfoot", "username"=>"lightfoot@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Create (0.9ms)[0m  [1m[32mINSERT INTO "members" ("username", "password_digest", "first", "last", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "lightfoot@gmail.com"], ["password_digest", "$2a$12$wiSnYy8N4sp5/vKtAdJhpuf/woIl7hyNFV2gMx8Um0EK1EvZec3U6"], ["first", "Rob"], ["last", "Lightfoot"], ["created_at", "2022-02-04 19:28:41.603929"], ["updated_at", "2022-02-04 19:28:41.603929"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/members/11
+Completed 302 Found in 206ms (ActiveRecord: 2.4ms | Allocations: 2455)
+
+
+Started GET "/members/11" for 127.0.0.1 at 2022-02-04 13:28:41 -0600
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered members/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 466)
+  Rendered layout layouts/application.html.erb (Duration: 312.9ms | Allocations: 75894)
+Completed 200 OK in 327ms (Views: 313.3ms | ActiveRecord: 1.8ms | Allocations: 78507)
+
+
+Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:28:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:28:46 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Hj+AE4OHdnFAiuLTsR4HMiFnj8C8S7YYLjkPSpzLkJmJX6nOgwlMpznl4Zv+AAdiR2OywKrjfB4C9cuxzlCKA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:28:46 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 212.0ms | Allocations: 75438)
+Completed 200 OK in 214ms (Views: 213.1ms | ActiveRecord: 0.0ms | Allocations: 76954)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:28:46 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 13:28:51 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:28:51 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 720)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 271.9ms | Allocations: 110806)
+Completed 200 OK in 276ms (Views: 274.1ms | ActiveRecord: 0.0ms | Allocations: 112891)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-04 13:29:00 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P0mnLxMc5m88db/4Hs07mMTUyiXSsdvRdAlO1w4ck1ChFCeIZx7ehGWQA/U/8UOZhUza0dLrePlsun3E41b/Og==", "session"=>{"username"=>"lightfoot@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lightfoot@gmail.com"], ["LIMIT", 1]]
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."username" = $1 LIMIT $2[0m  [["username", "lightfoot@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/members/11
+Completed 302 Found in 245ms (ActiveRecord: 3.1ms | Allocations: 4247)
+
+
+Started GET "/members/11" for 127.0.0.1 at 2022-02-04 13:29:01 -0600
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered members/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 211.9ms | Allocations: 75712)
+Completed 200 OK in 216ms (Views: 212.3ms | ActiveRecord: 1.3ms | Allocations: 77426)
+
+
+Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:29:09 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pg+fUVwojGIsDEzWgs3DRt3NwUNXbzoI68KLo3VhuzA4Uh/2KCq0iXXp8Nuj8btHnFXRt1c1mSDzcbiwmCvXWg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:29:09 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 204.0ms | Allocations: 75438)
+Completed 200 OK in 206ms (Views: 205.1ms | ActiveRecord: 0.0ms | Allocations: 76955)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/signup_member" for 127.0.0.1 at 2022-02-04 13:29:13 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:13 -0600
+Processing by MembersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 927)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 247.3ms | Allocations: 111025)
+Completed 200 OK in 250ms (Views: 248.5ms | ActiveRecord: 0.0ms | Allocations: 112602)
+
+
+Started POST "/members" for 127.0.0.1 at 2022-02-04 13:29:26 -0600
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvwSLMxjw4OG3aT6AX8hsfHZhL8iS/Wn43YmBauxSgccoZKLuGH7aN84GPcgQ1mwsEGUSyIRVo/7xRUWRvsmbQ==", "member"=>{"first"=>"Derik", "last"=>"Wang", "username"=>"wang@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMember Create (0.6ms)[0m  [1m[32mINSERT INTO "members" ("username", "password_digest", "first", "last", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "wang@gmail.com"], ["password_digest", "$2a$12$n1mLVYCE3XW3IIdrgnbj9ePlTyGsQDy/gS9XCqg8Q8S1wnYr.O8ca"], ["first", "Derik"], ["last", "Wang"], ["created_at", "2022-02-04 19:29:26.875954"], ["updated_at", "2022-02-04 19:29:26.875954"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/members/12
+Completed 302 Found in 238ms (ActiveRecord: 4.1ms | Allocations: 2068)
+
+
+Started GET "/members/12" for 127.0.0.1 at 2022-02-04 13:29:26 -0600
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  Rendered members/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 236.6ms | Allocations: 75568)
+Completed 200 OK in 242ms (Views: 237.6ms | ActiveRecord: 0.5ms | Allocations: 77294)
+
+
+Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:29:32 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z8HSn3RqvDHzAj4Rpk1FHL6hJmA8XKsJsBUiXb0RAoD5nFI4AGiE2qrnghyHcT0d/zk2lDwGCCGophFOUFtu6g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1380)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:29:32 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 221.2ms | Allocations: 75435)
+Completed 200 OK in 223ms (Views: 222.2ms | ActiveRecord: 0.0ms | Allocations: 76950)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 13:29:34 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:34 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 255.2ms | Allocations: 110439)
+Completed 200 OK in 258ms (Views: 256.3ms | ActiveRecord: 0.0ms | Allocations: 111979)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-04 13:29:43 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hez8gUhChojEWD2SK6NdNKj1fdfrI0WBVSA8gxKA9gobsXwmPEC+Y529gZ8KnyU16W1tI+t55qlNkw+Q/8qaYA==", "session"=>{"username"=>"wang@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wang@gmail.com"], ["LIMIT", 1]]
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."username" = $1 LIMIT $2[0m  [["username", "wang@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/members/12
+Completed 302 Found in 207ms (ActiveRecord: 0.8ms | Allocations: 1727)
+
+
+Started GET "/members/12" for 127.0.0.1 at 2022-02-04 13:29:43 -0600
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered members/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 202.2ms | Allocations: 75701)
+Completed 200 OK in 206ms (Views: 202.8ms | ActiveRecord: 1.1ms | Allocations: 77414)
+
+
+Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:29:54 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LaQSCzwZwTIqaZKr78M8rctRWXG+xde9D5RKC2GzVeKz+ZKsSBv52XOMLqbO/0SsislJhb6fdJUXJ3kYjPk5iA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:29:54 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 206.0ms | Allocations: 75436)
+Completed 200 OK in 208ms (Views: 207.0ms | ActiveRecord: 0.0ms | Allocations: 76951)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:29:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 13:32:38 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:32:38 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 271.5ms | Allocations: 110455)
+Completed 200 OK in 273ms (Views: 272.4ms | ActiveRecord: 0.0ms | Allocations: 112003)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-04 13:32:47 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4lw+cOpU8ktuJ7miHbvTKYGX1iIbOBYsTd+TNyxIof58Ab7XnlbKoDfCBa88h6sowA/G1htitQRVbKAkwQLNlA==", "session"=>{"username"=>"wranglers@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wranglers@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 226ms (ActiveRecord: 2.1ms | Allocations: 4667)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-04 13:32:47 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 452)
+  Rendered layout layouts/application.html.erb (Duration: 207.3ms | Allocations: 75880)
+Completed 200 OK in 214ms (Views: 209.3ms | ActiveRecord: 0.5ms | Allocations: 78464)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:32:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:32:50 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+J03TQUpDoIvjJKstkfoTaYR4AxWlYHqDI2lGc+PvhFmwLfqcSs2aXZpLqGXe5BM54nw+FbPIsIUPpYKIsXSew=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:32:50 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 220.5ms | Allocations: 75438)
+Completed 200 OK in 222ms (Views: 221.6ms | ActiveRecord: 0.0ms | Allocations: 76955)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:32:51 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/signup_organization" for 127.0.0.1 at 2022-02-04 13:48:08 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:08 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1258)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 308.2ms | Allocations: 111496)
+Completed 200 OK in 312ms (Views: 309.3ms | Allocations: 113207)
+
+
+Started GET "/signup_member" for 127.0.0.1 at 2022-02-04 13:48:10 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:10 -0600
+Processing by MembersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 933)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 256.4ms | Allocations: 111045)
+Completed 200 OK in 259ms (Views: 257.5ms | Allocations: 112627)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 13:48:14 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:14 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 338)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 248.6ms | Allocations: 110432)
+Completed 200 OK in 252ms (Views: 250.0ms | Allocations: 111973)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-04 13:48:26 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IEzvvY9MEj+kxw2YxMvZcrZyUYIbhy2WjeOyL9TAmpO+EW8a+04q1P0isZXl96Fz9+pBdhvdjr6VUIE8OYr2+Q==", "session"=>{"username"=>"wranglers@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wranglers@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 260ms (ActiveRecord: 9.6ms | Allocations: 3752)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-04 13:48:27 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 231.8ms | Allocations: 75679)
+Completed 200 OK in 238ms (Views: 232.7ms | ActiveRecord: 0.7ms | Allocations: 77484)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:48:31 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QU8Fh80eyrU7Ks63AwxmE7N49d2ezAwzBE/IR3/3xE3fEoUguRzyXmLPcroiMB4S8uDlKZ6Wrxsc/PtUkr2oJw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:48:31 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 252.3ms | Allocations: 75438)
+Completed 200 OK in 254ms (Views: 253.1ms | ActiveRecord: 0.0ms | Allocations: 76955)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 13:48:32 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:32 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 294.5ms | Allocations: 110424)
+Completed 200 OK in 297ms (Views: 296.0ms | ActiveRecord: 0.0ms | Allocations: 111969)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-04 13:48:41 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qyky5CuUgR6VYIO7p0g41JNjl2y6UhNs0SMs+9HTb4c1dLJDX5a59cyFP7aGdEDV0vuHmLoIsETJkB/oPJkD7Q==", "session"=>{"username"=>"ankit@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ankit@gmail.com"], ["LIMIT", 1]]
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."username" = $1 LIMIT $2[0m  [["username", "ankit@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/members/1
+Completed 302 Found in 234ms (ActiveRecord: 1.9ms | Allocations: 1759)
+
+
+Started GET "/members/1" for 127.0.0.1 at 2022-02-04 13:48:41 -0600
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered members/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 232.8ms | Allocations: 75707)
+Completed 200 OK in 237ms (Views: 233.3ms | ActiveRecord: 0.9ms | Allocations: 77423)
+
+
+Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:48:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
+  
+Started DELETE "/logout" for 127.0.0.1 at 2022-02-04 13:49:08 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0jT6BNwS9QwUW9P/I1UCZhtcICw8NHza5T/KxfiYXvJMaXqjqBDN502+b/ICaXpnWsQw2Dxu3/L9jPnWFdIymA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 13:49:08 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 253.2ms | Allocations: 75479)
+Completed 200 OK in 255ms (Views: 254.3ms | ActiveRecord: 0.0ms | Allocations: 76995)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-04 13:49:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
