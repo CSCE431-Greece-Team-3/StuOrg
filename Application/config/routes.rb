@@ -30,7 +30,11 @@ Rails.application.routes.draw do
   delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
 
-  get "members/:id", to: "members#show"
+  #get "members/:id", to: "members#show"
+  get "member_profile", to: "members#show"
+  get 'edit_member_profile', to: "members#edit"
+
+  delete 'delete_member_profile', to: "members#destroy"
 
   resources :articles
   resources :member

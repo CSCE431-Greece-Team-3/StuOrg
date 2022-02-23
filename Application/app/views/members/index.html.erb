@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Username</th>
-      <th>Password digest</th>
+      <th>Password</th>
       <th>First</th>
       <th>Last</th>
       <th colspan="3"></th>
@@ -17,12 +17,11 @@
     <% @members.each do |member| %>
       <tr>
         <td><%= member.username %></td>
-        <td><%= member.password %></td>
         <td><%= member.first %></td>
         <td><%= member.last %></td>
-        <td><%= link_to 'Show', member %></td>
-        <td><%= link_to 'Edit', edit_member_path(member) %></td>
-        <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show Product', member, method: :get %></td>
+          <td><%= button_to 'Edit Product', edit_member_path(member), method: :get %></td>
+          <td><%= button_to 'Delete Product', member_path(member), method: :delete, data: {confirm: "Are you sure?"} %></td>
       </tr>
     <% end %>
   </tbody>

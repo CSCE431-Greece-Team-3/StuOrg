@@ -6,5 +6,6 @@
     <h2><span style = "color:white">You are not currently part of any organizations</span></h2>
 <%end%>
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= button_to 'Logout', logout_path, :method => :delete %>
+<td><%= button_to 'Edit Profile', '/edit_member_profile', method: :get %></td>
+<td><%= button_to 'Delete Account', '/delete_member_profile', method: :delete, data: {confirm: "Are you sure?"} %></td>
+<td><%= button_to 'Logout', logout_path, :method => :delete %></td>
