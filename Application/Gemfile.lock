@@ -293,6 +293,7 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    semantic_range (3.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -345,6 +346,7 @@ GEM
 
 PLATFORMS
   universal-darwin-21
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -360,7 +362,6 @@ DEPENDENCIES
   groupdate
   image_processing (~> 1.0)
   jbuilder
-  jquery-rails
   paypal-checkout-sdk
   pg (~> 1.1)
   rails (= 6.1.4.4)

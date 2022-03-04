@@ -1,11 +1,11 @@
-
 <nav id="nav-header" class="text-left">
 	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 			PRODUCTS
 		</a>
 
@@ -16,8 +16,8 @@
 			<a class="dropdown-item" href="#">Miscellanious</a>
 		</div>
 	</div>
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		ORGANIZATIONS
 		</a>
 		
@@ -42,8 +42,15 @@
 	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
 	</div>
-	<div id="no-drop">
-		<a href="signup">SIGN UP</a>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
 	</div>
 
 </nav>
@@ -52,28 +59,27 @@
 	<h1>MARKETPLACE</h1>
 </div>
 
-<div id="marketplace" class="mx-auto">
-	<span style = "color:white">
-	<tbody>
-		<% @products.each do |product| %>
+<tbody>
+	<% @products.each do |product| %>
 		<div class="card">
-		
-				<div id="prodinfo">
-					<%= product.title %>
-				</div>
-				<div id="prodinfo">
-					<%= image_tag product.image.variant(
-						format: :png,
-						resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
-					) %>
-				</div>
-				<div id="prodinfo">
-					<%= "Price: $" + product.price.to_s %>
-				</div>
-			<a href="checkout" class="button1 mx-auto">Add to Cart</a></div>
-			<br>
+	
+			<div id="prodinfo">
+				<%= product.title %>
 			</div>
-		<% end %>
-	</tbody>
-	</span>
-</div>
+
+			<div id="prodinfo">
+				<%= image_tag product.image.variant(
+					format: :png,
+					resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+				) %>
+			</div>
+
+			<div id="prodinfo">
+				<%= "Price: $" + product.price.to_s %>
+			</div>
+
+			<a href="checkout" class="button1 mx-auto">Add to Cart</a></div>
+		
+		</div>
+	<% end %>
+</tbody>
