@@ -8,6 +8,12 @@ class ProductsController < ApplicationController
     @products = @user.products.all
   end
 
+  def tag_index
+    @user = User.find_by_id(session[:id])
+    @tag = params[:tag]
+    params[:tag] ? @products = @user.products.tagged_with(params[:tag]) : @products = @user.products.all
+  end 
+
   def marketplace
     @products = Product.all
   end
@@ -27,7 +33,7 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
     @user = User.find_by_id(session[:id])
-    product_params = params.require(:product).permit(:title, :image, :price)
+    product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     @product = @user.products.new(product_params)
 
     respond_to do |format|
@@ -43,7 +49,7 @@ class ProductsController < ApplicationController
 
   # PATCH/PUT /products/1 or /products/1.json
   def update
-    product_params = params.require(:product).permit(:title, :image, :price)
+    product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to product_url(@product), notice: "Product was successfully updated." }
@@ -79,6 +85,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:title, :price)
+      params.require(:product).permit(:title, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     end
 end

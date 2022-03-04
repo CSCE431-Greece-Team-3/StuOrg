@@ -11,10 +11,7 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
-        if /\A[^@\s]+@[^@\s]+\z/.match(@user.username) == nil 
-            flash[:notice] = "Invalid Username"
-            redirect_to '/signup_organization'
-        elsif User.find_by(username: @user.username)
+        if User.find_by(username: @user.username)
             flash[:notice] = "Username already exists"
             redirect_to '/signup_organization'
         elsif @user.password.length < 8

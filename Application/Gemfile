@@ -4,6 +4,8 @@ ruby '2.6.6'
 
 gem 'rails-controller-testing'
 
+gem 'simple_form'
+
 gem "image_processing", "~> 1.0"
 
 gem 'active_storage_validations'
@@ -13,6 +15,8 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'simplecov', require: false, group: :test
 
 gem 'bcrypt' 
+
+gem 'paypal-checkout-sdk'
 
 # gem 'pg_tester'
 

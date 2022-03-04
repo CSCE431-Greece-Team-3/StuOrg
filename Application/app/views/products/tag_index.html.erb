@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div id="index">
+  <h1>Products with the tag: <%=@tag%></h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.title %></td>
+          <td><%= button_to 'Show Product', product, method: :get %></td>
+          <td><%= button_to 'Edit Product', edit_product_path(product), method: :get %></td>
+          <td><%= button_to 'Delete Product', product_path(product), method: :delete, data: {confirm: "Are you sure?"} %></td>
+        </tr>
+      <% end %> 
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+
+<br>
+
+<%= link_to 'Back', dashboard_path %>
