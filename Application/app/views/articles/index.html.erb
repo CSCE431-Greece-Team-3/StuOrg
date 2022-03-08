@@ -64,3 +64,30 @@
 	<button class="container text-center">Read More</button>
 </div>
 
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+	<% @products.each do |product| %>
+		<div class="carousel-item">
+			<div id="prodinfo">
+			<%= product.title %>
+			</div>
+			<div id="prodinfo">
+			<%= image_tag product.image.variant(
+				format: :png,
+				resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+			) %>
+			</div>
+		</div>
+	<% end %> 
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

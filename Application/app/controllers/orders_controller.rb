@@ -5,7 +5,9 @@ class OrdersController < ApplicationController
     def index; end
 
     def purchase 
-    
+      order = Order.new
+      @products = [:session].products.all
+      redirect_to '/'
     end
 
     def create_order
