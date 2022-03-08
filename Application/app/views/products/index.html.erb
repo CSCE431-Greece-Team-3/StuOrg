@@ -21,8 +21,11 @@
                 resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
               ) %>
             </div>
-            <div id="prodinfo">
+            <div id="prodinfo"> 
               <%= "Price: $" + product.price.to_s %>
+            </div>
+            <div id="prodinfo"> 
+              <%= "Quantity in stock: " + product.quantity.to_s %>
             </div>
             <div id="prodinfo">
               <%= button_to 'Edit Product', edit_product_path(product), method: :get %>

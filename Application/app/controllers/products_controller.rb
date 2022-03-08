@@ -33,13 +33,13 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
     @user = User.find_by_id(session[:id])
-    product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
+    product_params = params.require(:product).permit(:title, :image, :price, :quantity, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     @product = @user.products.new(product_params)
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
-        format.json { render :show, status: :created, location: @product }
+        format.html { redirect_to proddash_path, notice: "Product was successfully created." }
+        format.json { render :index, status: :created, location: @product }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @product.errors, status: :unprocessable_entity }
@@ -49,11 +49,11 @@ class ProductsController < ApplicationController
 
   # PATCH/PUT /products/1 or /products/1.json
   def update
-    product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
+    product_params = params.require(:product).permit(:title, :image, :price, :quantity, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to product_url(@product), notice: "Product was successfully updated." }
-        format.json { render :show, status: :ok, location: @product }
+        format.html { redirect_to proddash_path, notice: "Product was successfully updated." }
+        format.json { render :index, status: :ok, location: @product }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @product.errors, status: :unprocessable_entity }
@@ -85,6 +85,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:title, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
+      params.require(:product).permit(:title, :price, :quantity, :tag_list, :tag, { tag_ids: [] }, :tag_ids)
     end
 end

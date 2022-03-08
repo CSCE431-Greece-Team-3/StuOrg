@@ -15,9 +15,15 @@
     <% end %>
   </p>
 
+  <p>
     <strong>Price:</strong>
     <%= "$" + @product.price.to_s %>
+  </p>
 
+  <p>
+    <strong>Quantity:</strong>
+    <%= @product.quantity.to_s %>
+  </p>
 
     <p><small>Tags: <%= raw @product.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small></p>
 </div>

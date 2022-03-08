@@ -3,6 +3,11 @@ class OrdersController < ApplicationController
     skip_before_action :verify_authenticity_token
     before_action :paypal_init, :except => [:index]
     def index; end
+
+    def purchase 
+    
+    end
+
     def create_order
         price = '100.00'
         request = PayPalCheckoutSdk::Orders::OrdersCreateRequest::new

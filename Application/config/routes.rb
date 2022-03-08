@@ -20,13 +20,14 @@ Rails.application.routes.draw do
   get "/dashboard", to: "dashboards#dashboard"
 
   get "products", to: "articles#products"
-  get "members", to: "dashboards#members"
+  get "members", to: "members#index"
   get "profile", to: "dashboards#dashboard"
 
   get "/checkout", to: "orders#index"
 
   get "upload", to: "products#new"
   post "upload", to: "products#create"
+  get "/proddash", to: "products#index"
 
   get 'editprofile', to: "users#edit"
 
