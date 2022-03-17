@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(version: 2022_03_03_201435) do
     t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "member_id"
+    t.bigint "product_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -67,6 +69,7 @@ ActiveRecord::Schema.define(version: 2022_03_03_201435) do
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "quantity"
     t.index ["user_id"], name: "index_products_on_user_id"
   end
 
