@@ -7,4 +7,8 @@ class DashboardsController < ApplicationController
       @products = @user.products.all
     end
  
+    def members
+      @user = User.find_by_id(session[:id])
+      @members = @user.members.all
+    end
   end

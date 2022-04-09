@@ -1,0 +1,44 @@
+<div id="members">
+  <div id="bkbtn">
+    <%= link_to '< Back', dashboard_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Members</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>First</th>
+        <th>Last</th>
+        <th colspan="30"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @members.each do |member| %>
+        <tr>
+          <td><%= member.username %></td>
+          <td><%= member.first %></td>
+          <td><%= member.last %></td>
+          <td><%= button_to 'Remove Member', remove_member_path(:id => member.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+
+  <%= link_to 'New Member', new_member_path %>
+
+  <br>
+  <div id="memchart" class="text-center">
+    <h4>Membership Growth</h4>
+    <%= line_chart @members.group_by_day(:created_at).count %>
+  </div>
+
+  <br>  
+
+</div>

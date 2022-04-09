@@ -1,0 +1,20 @@
+<div id="members">
+  <div id="bkbtn">
+    <%= link_to '< Back', dashboard_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Add Members</h1>
+
+  <%= simple_form_for :add_members, :url => "/create_new_member", :method => :post do |f| %>
+    <%= f.input :username, input_html: { name: "username" } %>
+    <%= f.button :submit, "Add Member" %>
+  <% end %>
+
+</div>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>

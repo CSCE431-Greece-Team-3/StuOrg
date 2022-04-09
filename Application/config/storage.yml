@@ -8,7 +8,7 @@ test:
 
 amazon:
   service: S3
-  access_key_id: "AKIA3UANPY7USDVPXKOE"
-  secret_access_key: "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"
+  access_key_id: "AKIA3UANPY7UVQXUPN4E"
+  secret_access_key: "tlDccZS1fOv+Nzp0iS/+gfSBmYpGJKS/eP70FzqJ"
   bucket: "stuorg"
   region: "us-east-2" # e.g. 'us-east-1'

@@ -1,15 +1,27 @@
 Rails.application.routes.draw do
+  get "/mem_profile", to: "members#show"
+  get "/edit_mem", to: "members#edit"
+  delete "/delete_member", to: "members#destroy"
+  delete "remove_member/:id", to: "users#remove_member", as: "remove_member"
   resources :members
   resources :products
+
   get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
   get "/", to: "articles#index"
 
-
+  get "/add_potential_members", to: "users#add_members"
+  post "/create_new_member", to: "users#create_new_member"
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
+
+  post "/tag_marketplace", to: "products#tag_marketplace"
+
+  post "/org_marketplace", to: "products#org_marketplace"
+
+  post "/marketplace", to: "products#tag_marketplace"
 
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
@@ -20,8 +32,9 @@ Rails.application.routes.draw do
   get "/dashboard", to: "dashboards#dashboard"
 
   get "products", to: "articles#products"
-  get "members", to: "members#index"
+  get "/view_members", to: "users#index"
   get "profile", to: "dashboards#dashboard"
+  
 
   get "/checkout", to: "orders#index"
 
@@ -34,7 +47,6 @@ Rails.application.routes.draw do
   delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
 
-  get "members/:id", to: "members#show"
   post :create_order, :to => 'orders#create_order'
   post :capture_order, :to => 'orders#capture_order'
 

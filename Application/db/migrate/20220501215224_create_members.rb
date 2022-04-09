@@ -6,6 +6,7 @@ class CreateMembers < ActiveRecord::Migration[6.1]
       t.string :first
       t.string :last
       t.string :organizations
+      t.belongs_to :users, foreign_key: true
       
       t.timestamps
     end

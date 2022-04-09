@@ -1,4 +1,40 @@
-<h1>Editing Member</h1>
+<div id="account">
+    <% provide(:title, "Edit user") %>
+    <span style = "color:white"><h2>Edit Existing Organization Account</h2>
+    
+    <div id="bkbtn">
+        <%= link_to '< Back', "/mem_profile" %>
+    </div>
 
-<%= render 'form', member: @member %>|
-<%= link_to 'Back', members_path %>
+    <%= form_for @member do |f| %>
+        <div id="account">
+            <%= f.label :"First Name:" %>
+            <%= f.text_field :first %><br>
+        </div>
+
+        <div id="account">
+            <%= f.label :"Last Name:" %>
+            <%= f.text_field :last %><br>
+        </div>
+
+        <div id="account">
+            <%= f.label :"Username:" %>
+            <%= f.email_field :username %><br>
+        </div>
+
+        <div id="account">
+            <%= f.label :"Password:" %>
+            <%= f.password_field :password %></span><br>
+        </div>
+
+        <div id="account">
+            <%= f.submit "Save changes", class: "btn btn-primary" %>
+        </div>
+
+    <% end %>
+    
+    <div id="account">
+        <td><%= button_to 'Delete Account', '/delete_member', method: :delete, data: {confirm: "Are you sure?"} %></td>
+    </div>
+
+</div>

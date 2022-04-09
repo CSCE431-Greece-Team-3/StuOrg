@@ -2,9 +2,19 @@
 
 <h1><span style = "color:white">Howdy</span></h1>
 <% if logged_in_member? %>
-    <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>
-    <h2><span style = "color:white">You are not currently part of any organizations</span></h2>
+    <% if User.find_by_id(current_member.users_id) == nil %>
+
+        <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
+        <h2><span style = "color:white">You are currently not in any Organizations.</span></h2>  
+
+    <% else %>
+        <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>
+        <h2><span style = "color:white">Organizations:</span></h2>
+        <span style = "color:white"><%= User.find_by_id(current_member.users_id).first %></span>
+    
+    <%end%>
 <%end%>
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
+<br>
+<%= link_to 'Edit Profile', "/edit_mem" %> |
 <%= button_to 'Logout', logout_path, :method => :delete %>
