@@ -5,7 +5,7 @@
   <p id="notice"><%= notice %></p>
 
   <h1>Add Members</h1>
-
+  
   <%= simple_form_for :add_members, :url => "/create_new_member", :method => :post do |f| %>
     <%= f.input :username, input_html: { name: "username" } %>
     <%= f.button :submit, "Add Member" %>

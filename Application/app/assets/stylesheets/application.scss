@@ -742,6 +742,18 @@ h6 span{
   padding-bottom: 20px;
 }
 
+#members form input {
+  width: 50%;
+}
+#members form input.btn {
+  width: 50%;
+  margin-top: 20px;
+  border: 2px solid var(--color2);
+  color: var(--color2);
+  background-color: var(--color1);
+  box-shadow: none;
+}
+
 
 
 
