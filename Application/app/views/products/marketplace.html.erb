@@ -4,30 +4,7 @@
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-			PRODUCTS
-		</a>
-
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="button">
-			<%= form_with(url: "/tag_marketplace") do |f| %>
-				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, include_blank: true %>
-				<%= f.submit %>
-			<% end %>
-		</div>
-	</div>
-	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		ORGANIZATIONS
-		</a>
-		
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<%= form_with(url: "/org_marketplace") do |f| %>
-				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, include_blank: true %>
-				<%= f.submit %>
-			<% end %>
-		</div>
-	</div>
+	
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
 	</div>
@@ -45,7 +22,7 @@
 		</div>
 	</div>
 	<div id="no-drop">
-		<a href="view_cart">CART</a>
+		<%= link_to 'CART', view_cart_path %>
 	</div>
 
 </nav>
@@ -59,11 +36,44 @@
 
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
-	<%= link_to 'View Cart', view_cart_path %>
+	<div id="shopbtn" class="mx-auto">
+		<a class="btn btn-primary" data-bs-toggle="collapse" href="#prod" role="button" aria-expanded="false" aria-controls="prod">
+		PRODUCTS
+		</a>
+	</div>
+	<div class="collapse" id="prod">
+		<div class="card card-body">
+		<%= form_with(url: "/tag_marketplace") do |f| %>
+			<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, include_blank: true %>
+			<%= f.submit %>
+		<% end %>
+		</div>
+	</div>
+
+	<div id="shopbtn" class="mx-auto">
+		<a class="btn btn-primary" data-bs-toggle="collapse" href="#orgs" role="button" aria-expanded="false" aria-controls="orgs">
+		ORGANIZATIONS
+		</a>
+	</div>
+	<div class="collapse" id="orgs">
+		<div class="card card-body">
+		<%= form_with(url: "/org_marketplace") do |f| %>
+			<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, include_blank: true %>
+			<%= f.submit %>
+		<% end %>
+		</div>
+	</div>
+
+	<br>
+
 	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
-	<%= f.input :referral_code, input_html: { name: "referral_code" } %>
-	<%= f.button :submit, "Set referral code" %>
-<% end %>
+		<div id="shopbtn" class="mx-auto">
+			<%= f.input :referral_code, input_html: { name: "referral_code" } %>
+		</div>
+		<div id="shopbtn" class="mx-auto">
+			<%= f.button :submit, "Set referral code" %>
+		</div>
+	<% end %>
 </div>
 
 <br>

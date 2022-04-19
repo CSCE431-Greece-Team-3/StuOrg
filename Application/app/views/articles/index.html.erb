@@ -4,38 +4,7 @@
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-			PRODUCTS
-		</a>
-
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Apparel</a>
-			<a class="dropdown-item" href="#">Stationary</a>
-			<a class="dropdown-item" href="#">Events</a>
-			<a class="dropdown-item" href="#">Miscellanious</a>
-		</div>
-	</div>
-	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		ORGANIZATIONS
-		</a>
-		
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Academic</a>
-			<a class="dropdown-item" href="#">Arts</a>
-			<a class="dropdown-item" href="#">FLOs</a>
-			<a class="dropdown-item" href="#">Greek Life</a>
-			<a class="dropdown-item" href="#">Health/Rec</a>
-			<a class="dropdown-item" href="#">International</a>
-			<a class="dropdown-item" href="#">Professional</a>
-			<a class="dropdown-item" href="#">Political</a>
-			<a class="dropdown-item" href="#">Religious</a>
-			<a class="dropdown-item" href="#">Service</a>
-			<a class="dropdown-item" href="#">Social</a>
-			<a class="dropdown-item" href="#">Special Interest</a>
-		</div>
-	</div>
+	
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
 	</div>
@@ -59,9 +28,11 @@
 <div class="mx-auto container text-center justify-content-center align-items-center" id="container">
 	<h1>Student Organization Marketplace</h1>
 	<p>Support your favorite on campus organizations with the click of a button!
-	<br> Search for products, organizations, & more! <br> Track sales for your organization!
+	<br> Search for products, organizations, & more! <br> 
 	</p>
-	<button class="container text-center">Read More</button>
+	<div id="shopbtn">
+		<%= link_to "Let's Go!", '/marketplace' %>
+	</div>
 </div>
 
 
