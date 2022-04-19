@@ -100,5 +100,6 @@ ActiveRecord::Schema.define(version: 2032_10_03_201435) do
   end
 
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "members", "users", column: "users_id"
   add_foreign_key "taggings", "tags"
 end

@@ -30,10 +30,10 @@ class MembersController < ApplicationController
   # POST /members or /members.json
   def create
     @member = Member.new(member_params)
-    if /\A[^@\s]+@[^@\s]+\z/.match(@member.username) == nil 
-        flash[:notice] = "Invalid Username"
-        redirect_to '/signup_member'
-    elsif Member.find_by(username: @member.username)
+    # if /\A[^@\s]+@[^@\s]+\z/.match(@member.username) == nil 
+    #     flash[:notice] = "Invalid Username"
+    #     redirect_to '/signup_member'
+    if Member.find_by(username: @member.username)
         flash[:notice] = "Username already exists"
         redirect_to '/signup_member'
     elsif @member.password.length < 8
