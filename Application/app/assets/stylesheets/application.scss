@@ -136,8 +136,6 @@ a.nav-link.py-2.px-3.active {
 	font-size: 16px;
 	width: 160px;
 	margin-top: 30px;
-  margin-left: 40%;
-  margin-right: 40%;
 	cursor: pointer;
 }
 #container #shopbtn a:hover{
@@ -187,6 +185,7 @@ a.nav-link.py-2.px-3.active {
   padding-right: 15px;
 }
 #bkbtn {
+  margin-left: 15px;
   padding: 6px;
   border-radius: 20px;
   width: 10%;
@@ -198,6 +197,21 @@ a.nav-link.py-2.px-3.active {
   color: var(--color2);
 }
 #bkbtn:hover a {
+  color: var(--color1);
+}
+#shopbkbtn {
+  margin-left: 15px;
+  padding: 6px;
+  border-radius: 20px;
+  width: 20%;
+}
+#shopbkbtn:hover {
+  background-color: var(--color2);
+}
+#shopbkbtn a {
+  color: var(--color2);
+}
+#shopbkbtn:hover a {
   color: var(--color1);
 }
 // <<<<<<<<< end of members
@@ -713,8 +727,7 @@ h6 span{
   color: var(--color2);
   width: 50%;
   margin-left: 35%;
-  margin-right: 65%;
-  padding: 10px;
+  margin-right: 35%;
 }
 #memdash h4 {
   font-size: 175%;

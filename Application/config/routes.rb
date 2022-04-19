@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
 
-  post "add_to_cart/:product_id", to: "products#add_to_cart", as: 'add_to_cart'
+  post "add_to_cart/:product_id", to: "products#view_cart", as: 'add_to_cart'
 
   delete "remove_from_cart/:product_id", to: "products#remove_from_cart", as: 'remove_from_cart'
 

@@ -1,13 +1,42 @@
+<nav id="nav-header" class="text-left">
+	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
+		<a id="home-btn" href="/"><span>Mporium</span></a>
+	</div>
+	<div id="logo"> </div>	
+	
+	<div id="no-drop">
+		<a href="marketplace">MARKETPLACE</a>
+	</div>
+	<div id="no-drop">
+		<a href="sign_in">LOG IN</a>
+	</div>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
 
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
+	</div>
+	<div id="no-drop">
+		<%= link_to 'CART', view_cart_path %>
+	</div>
+
+</nav>
 
 <div id="marketplace" class="mx-auto">
 	<span style = "color:white">
-	<div id="bkbtn">
+	<div id="shopbkbtn">
         <%= link_to '< back to marketplace', "/marketplace" %>
     </div>
 	<tbody>
 		<h1><span>Shopping Cart</span></h1>
-		<h3><span style= "color:white">You are referred by: <%= @member_refer %></span></h3>
+		<% if @member_refer != nil %>
+			<h3><span style= "color:white">You are referred by: <%= @member_refer %></span></h3>
+		<% end %>
 		<% if @cart_ids != nil %>
 			<% @cart_ids.each do |cart_id| %>
 				<div class="card">
@@ -31,16 +60,15 @@
 			<br>
 			<h3><span style= "color:white">Total Cost: <%= @total %></span></h3>
 			<br>
+			<div id="bkbtn" class="text-center mx-auto">
+				<%= link_to "Checkout", '/checkout' %>
+			</div>
 		<% else %>
-			<div id="memdash" class="card">
+			<div id="memdash" class="card mx-auto">
 				<h1>Your cart is empty.</h1>
 			</div>
 		<% end %>
 	</tbody>
-	
-	<div id="bkbtn" class="text-center mx-auto">
-		<%= link_to "Checkout", '/checkout' %>
-	</div>
 
 	</span>
 </div>

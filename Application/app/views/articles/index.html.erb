@@ -21,6 +21,9 @@
 			<a class="dropdown-item" href="signup_member">Member</a>
 		</div>
 	</div>
+	<div id="no-drop">
+		<%= link_to 'CART', view_cart_path %>
+	</div>
 
 </nav>
 
@@ -30,7 +33,7 @@
 	<p>Support your favorite on campus organizations with the click of a button!
 	<br> Search for products, organizations, & more! <br> 
 	</p>
-	<div id="shopbtn">
+	<div id="shopbtn" class="mx-auto">
 		<%= link_to "Let's Go!", '/marketplace' %>
 	</div>
 </div>

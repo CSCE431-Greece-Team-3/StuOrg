@@ -28,12 +28,6 @@
 </nav>
 
 
-
-
-
-
-
-
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
 	<div id="shopbtn" class="mx-auto">
@@ -97,7 +91,9 @@
 					<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
 				</div>
 			
-			<%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
+				<div class="button1 mx-auto">
+					<%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
+				</div>
 			
 			</div>
 

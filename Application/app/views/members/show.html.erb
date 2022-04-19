@@ -4,21 +4,22 @@
     <h1 class="text-center"><span>Howdy!</span></h1>
 </div>
 
+
 <% if logged_in_member? %>
     <% if User.find_by_id(current_member.users_id) == nil %>
         <div id="member" >
             <h3 class="text-center"><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
         </div>
             <div id="memdash" class="card">
-            <h4><span >You are currently not in any Organizations.</span></h2>  
-        </div>
+                <h4><span >You are currently not in any Organizations.</span></h2>  
+            </div>
     <% else %>
         <div id="member">
             <h3 class="text-center"><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
         </div>
         <div id="memdash" class="card">
-            <h2><span >Organizations:</span></h2>
-            <span ><%= User.find_by_id(current_member.users_id).first %></span>
+            <h2 class="text-center"><span >Organizations:</span></h2>
+            <span class="text-center"><%= User.find_by_id(current_member.users_id).first %></span>
         </div>
     <%end%>
 <%end%>
@@ -32,7 +33,7 @@
     <h4><span >Number of products referred: </span></h4>
     <h4><span > <%= current_member.num_referred %> </span></h4>
 </div>
-
+</div>
 <br>
 
 
