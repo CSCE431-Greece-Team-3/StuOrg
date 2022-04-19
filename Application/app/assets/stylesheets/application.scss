@@ -605,6 +605,18 @@ h6 span{
   border: 2px solid var(--color2);
   background-color: var(--color1);
 }
+#marketplace form input {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 65%;
+  padding: 20px;
+}
+#marketplace #cartbtn form input {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+}
 
 #memdash {
   border: 2px solid var(--color2);
@@ -627,6 +639,7 @@ h6 span{
   font-size: 30px;
   padding-bottom: 20px;
 }
+
 
 
 

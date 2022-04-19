@@ -1,10 +1,13 @@
-<p><span style= "color:white">Your Cart:</span></p>
 
-<p><span style= "color:white">You are referred by: <%= @member_refer %></span></p>
 
 <div id="marketplace" class="mx-auto">
 	<span style = "color:white">
+	<div id="bkbtn">
+        <%= link_to '< back to marketplace', "/marketplace" %>
+    </div>
 	<tbody>
+		<h1><span>Shopping Cart</span></h1>
+		<h3><span style= "color:white">You are referred by: <%= @member_refer %></span></h3>
 		<% if @cart_ids != nil %>
 			<% @cart_ids.each do |cart_id| %>
 				<div class="card">
@@ -20,19 +23,24 @@
 					<div id="prodinfo">
 						<span style="color:black"><%= "Price: $" + Product.find_by_id(cart_id).price.to_s %></span>
 					</div>
-
-					<%= button_to 'Remove From Cart', remove_from_cart_path(cart_id), method: :delete %>
+					<div id="cartbtn">
+						<%= button_to 'Remove From Cart', remove_from_cart_path(cart_id), method: :delete %>
+					</div>
 				</div>
 			<% end %>
+			<br>
+			<h3><span style= "color:white">Total Cost: <%= @total %></span></h3>
+			<br>
 		<% else %>
-			<h1>Your cart is empty.</h1>
+			<div id="memdash" class="card">
+				<h1>Your cart is empty.</h1>
+			</div>
 		<% end %>
 	</tbody>
-	<br>
-	<p><span style= "color:white">Total Cost: <%= @total %></span></p>
-	<br>
+	
+	<div id="bkbtn" class="text-center mx-auto">
+		<%= link_to "Checkout", '/checkout' %>
+	</div>
 
-	<%# <a href="checkout" class="button1 mx-auto">Checkout</a> %>
-	<%= link_to "Checkout", '/checkout' %>
 	</span>
 </div>
