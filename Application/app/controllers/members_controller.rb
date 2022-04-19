@@ -41,6 +41,8 @@ class MembersController < ApplicationController
         redirect_to '/signup_member'
     else @member.valid?
         @member = Member.create(params.require(:member).permit(:first, :last, :username, :password))
+        @member.update_attribute(:referral_code, rand(36**8).to_s(36))
+        @member.update_attribute(:num_referred, 0)
         session[:id] = @member.id
         session[:type] = "member"
         redirect_to '/mem_profile'

@@ -26,6 +26,7 @@ class SessionsController < ApplicationController
   def destroy
     session[:id] = nil
     session[:user_type] = nil
+    session[:cart] = nil
     # flash[:notice] = "You have been signed out!"
     redirect_to '/'
   end

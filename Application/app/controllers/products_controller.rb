@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  before_action :set_product, only: %i[ show edit update destroy ]
+  before_action :set_product, :initialize_cart, only: %i[ show edit update destroy ]
 
   # GET /products or /products.json
   def index
@@ -17,7 +17,65 @@ class ProductsController < ApplicationController
   def marketplace
     @tags = Tag.all
     @users = User.all
-    @products = Product.all
+    @products = Product.order(:id).all
+  end
+
+  def initialize_cart
+    session[:cart] ||= []
+    session[:referral] = nil
+  end
+
+  def view_cart
+    @cart_ids = session[:cart]
+    @total = 0
+    if @cart_ids != nil
+      @cart_ids.each do |cart_id|
+        @total += Product.find_by_id(cart_id).price
+      end
+    end
+
+    session[:total] = @total
+
+    @member_refer = Member.find_by_referral_code(session[:referral])
+    if @member_refer != nil
+      @member_refer = Member.find_by_referral_code(session[:referral]).first
+    end
+  end 
+
+  def add_to_cart
+    session[:cart] ||= []
+    session[:cart] << params[:product_id]
+
+    @product = Product.find_by_id(params[:product_id])
+    new_quantity = @product.quantity - 1
+    @product.update_attribute(:quantity, new_quantity)
+
+    @member_refer ||= Member.find_by_referral_code(session[:referral])
+    if @member_refer
+      new_refer = @member_refer.num_referred + 1
+      @member_refer.update_attribute(:num_referred, new_refer)
+    end
+    redirect_to "/marketplace"
+  end
+
+  def remove_from_cart
+    session[:cart].delete_at(session[:cart].index(params[:product_id]))
+    @product = Product.find_by_id(params[:product_id])
+    new_quantity = @product.quantity + 1
+    @product.update_attribute(:quantity, new_quantity)
+
+    @member_refer ||= Member.find_by_referral_code(session[:referral])
+    if @member_refer != nil
+      new_refer = @member_refer.num_referred - 1
+      @member_refer.update_attribute(:num_referred, new_refer)
+    end
+
+    redirect_to "/view_cart"
+  end
+
+  def set_referral
+    session[:referral] = params[:referral_code]
+    redirect_to "/view_cart"
   end
 
   def org_marketplace

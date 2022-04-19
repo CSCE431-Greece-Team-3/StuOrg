@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.6'
+ruby '2.6.8'
 
 gem 'rails-controller-testing'
 
@@ -11,8 +11,6 @@ gem "image_processing", "~> 1.0"
 gem 'active_storage_validations'
 
 gem 'bootstrap', '~> 4.0.0'
-
-gem 'simplecov', require: false, group: :test
 
 gem 'bcrypt' 
 

@@ -1,0 +1,38 @@
+<p><span style= "color:white">Your Cart:</span></p>
+
+<p><span style= "color:white">You are referred by: <%= @member_refer %></span></p>
+
+<div id="marketplace" class="mx-auto">
+	<span style = "color:white">
+	<tbody>
+		<% if @cart_ids != nil %>
+			<% @cart_ids.each do |cart_id| %>
+				<div class="card">
+					<div id="prodinfo">
+						<span style="color:black"><%= Product.find_by_id(cart_id).title %></span>
+					</div>
+					<div id="prodinfo">
+						<%= image_tag Product.find_by_id(cart_id).image.variant(
+							format: :png,
+							resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+						) %>
+					</div>
+					<div id="prodinfo">
+						<span style="color:black"><%= "Price: $" + Product.find_by_id(cart_id).price.to_s %></span>
+					</div>
+
+					<%= button_to 'Remove From Cart', remove_from_cart_path(cart_id), method: :delete %>
+				</div>
+			<% end %>
+		<% else %>
+			<h1>Your cart is empty.</h1>
+		<% end %>
+	</tbody>
+	<br>
+	<p><span style= "color:white">Total Cost: <%= @total %></span></p>
+	<br>
+
+	<%# <a href="checkout" class="button1 mx-auto">Checkout</a> %>
+	<%= link_to "Checkout", '/checkout' %>
+	</span>
+</div>

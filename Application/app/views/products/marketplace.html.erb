@@ -56,25 +56,37 @@
 
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
+	<%= link_to 'View Cart', view_cart_path %>
+	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
+	<%= f.input :referral_code, input_html: { name: "referral_code" } %>
+	<%= f.button :submit, "Set referral code" %>
+<% end %>
 </div>
 
-<tbody>
-	<% @products.each do |product| %>
+<br>
+
+<div id="marketplace" class="mx-auto">
+	<span style = "color:white">
+	<tbody>
+		<% @products.each do |product| %>
 		<div class="card">
-	
-			<div id="prodinfo">
-				<%= product.title %>
-			</div>
-
-			<div id="prodinfo">
-				<%= image_tag product.image.variant(
-					format: :png,
-					resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
-				) %>
-			</div>
-
-			<div id="prodinfo">
-				<%= "Price: $" + product.price.to_s %>
+		
+				<div id="prodinfo">
+					<span style="color:black"><%= product.title %></span>
+				</div>
+				<div id="prodinfo">
+					<%= image_tag product.image.variant(
+						format: :png,
+						resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+					) %>
+				</div>
+				<div id="prodinfo">
+					<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
+				</div>
+			
+			<%# <a href="checkout" class="button1 mx-auto">Add to Cart</a> %>
+			<%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
+			
 			</div>
 
 			<a href="checkout" class="button1 mx-auto">Add to Cart</a></div>

@@ -15,6 +15,9 @@
     <%end%>
 <%end%>
 
-<br>
+<h3><span style = "color:white">Referral Code: <%= current_member.referral_code %></span></h3>
+
+<h3><span style = "color:white">Number of products you have referred: <%= current_member.num_referred %></span></h3>
+
 <%= link_to 'Edit Profile', "/edit_mem" %> |
 <%= button_to 'Logout', logout_path, :method => :delete %>
