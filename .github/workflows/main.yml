@@ -1,0 +1,3 @@
+name: env_tutorial
+  env:
+    CC_TEST_REPORTER_ID: cdd5272c7d42f79aeb5148fe5baf48559c5275ee2e6d2629faf836fe9ada316f

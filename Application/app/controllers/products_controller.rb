@@ -51,7 +51,7 @@ class ProductsController < ApplicationController
     @product.update_attribute(:quantity, new_quantity)
 
     @member_refer ||= Member.find_by_referral_code(session[:referral])
-    if @member_refer
+    if @member_refer != nil
       new_refer = @member_refer.num_referred + 1
       @member_refer.update_attribute(:num_referred, new_refer)
     end
@@ -75,7 +75,7 @@ class ProductsController < ApplicationController
 
   def set_referral
     session[:referral] = params[:referral_code]
-    redirect_to "/view_cart"
+    redirect_to "/marketplace"
   end
 
   def org_marketplace

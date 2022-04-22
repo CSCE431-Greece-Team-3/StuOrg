@@ -30,7 +30,7 @@ test:
   database: rubydbapp
   pool: 5
   username: postgres
-  password: '123456'
+  password: '12345'
 
 production:
   adapter: postgresql

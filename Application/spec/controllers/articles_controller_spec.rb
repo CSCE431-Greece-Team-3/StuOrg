@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe ArticlesController, type: :controller do 
     describe "gets" do
         it "new articles" do
-            get :new
+            get :index
         end
     end
 end
