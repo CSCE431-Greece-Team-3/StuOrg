@@ -92,6 +92,26 @@ class ProductsController < ApplicationController
     # @products = @taggings.where(@)
   end
 
+  def sortitems
+    @mode = params[:mode]
+    @products = Product.order(:id).all
+    if @mode == "asc_price"
+      @products = @products.sort_by { |p| [p.price] }
+    elsif @mode == "desc_price"
+      @products = @products.sort_by { |p| [p.price] }.reverse
+    elsif @mode == "asc_date"
+      @products = @products.sort_by { |p| [p.created_at] }
+    elsif @mode == "desc_date"
+      @products = @products.sort_by { |p| [p.created_at] }.reverse
+    end
+
+    respond_to do |format|
+      format.js 
+    end
+
+  end
+  
+
   # GET /products/1 or /products/1.json
   def show
   end

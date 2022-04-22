@@ -8,9 +8,8 @@ import 'bootstrap'
 import "chartkick/chart.js"
 
 
-jQuery(function() {
-    $(".dropdown-toggle").dropdown();
-});
+
+
 
 
 

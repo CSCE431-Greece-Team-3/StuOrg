@@ -31,6 +31,8 @@ Rails.application.routes.draw do
 
   post "/marketplace", to: "products#tag_marketplace"
 
+  post "/products/sortitems", to: "products#sortitems"
+
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
   get "/welcome", to: "articles#welcome"

@@ -29,32 +29,41 @@
 
 <div id="marketplace">
 	<h1>Products sold by <%= User.find_by_id(params[:org_id]).first %></h1>
-</div>
 
-<div id="shopbkbtn">
-	<%= link_to '< Back to Marketplace', "/marketplace" %> 
-</div>
+	<div id="shopbkbtn">
+		<%= link_to '< Back to Marketplace', "/marketplace" %> 
+	</div>
 
 <br>
 
-<% @products.each do |product| %>
-	<div class="card">
-	
-			<div id="prodinfo">
-				<span style="color:black"><%= product.title %></span>
-			</div>
-			<div id="prodinfo">
-				<%= image_tag product.image.variant(
-					format: :png,
-					resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
-				) %>
-			</div>
-			<div id="prodinfo">
-				<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
-			</div>
-			<div class="button1 mx-auto">
-				<%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
-			</div>
-		<br>
+<div id="shopbtn" class="mx-auto">
+		<a class="btn btn-primary" data-bs-toggle="collapse" href="#sortby" role="button" aria-expanded="false" aria-controls="sortby">
+		SORT BY ...
+		</a>
 	</div>
-<% end %>
+	<div class="collapse" id="sortby">
+		<div class="card card-body">
+			<%= form_with(url: "/marketplace") do |f| %>
+				<%= f.radio_button :sort, "asc_price"  %> 
+				<%= f.label "sort", 'Price: Lowest-Highest' %>
+				<br>
+				<%= f.radio_button "sort", "desc_price" %> 
+				<%= f.label :sort, 'Price: Highest-Lowest' %>
+				<br>
+				<%= f.radio_button "sort", "asc_date" %> 
+				<%= f.label :sort, 'Oldest-Newest' %>
+				<br>
+				<%= f.radio_button "sort", "desc_date" %> 
+				<%= f.label :sort, 'Newest-Oldest' %>
+			
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<div id="dynamicLoadingPanel">
+	<%=render :partial=>'sortitems'%>
+</div>
+	
+<%= javascript_pack_tag 'marketplace' %>

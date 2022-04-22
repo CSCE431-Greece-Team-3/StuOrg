@@ -1,0 +1,26 @@
+<span style = "color:white">
+<tbody>
+    
+    <% @products.each do |product| %>
+    <div class="card">
+    
+            <div id="prodinfo">
+                <span style="color:black"><%= product.title %></span>
+            </div>
+            <div id="prodinfo">
+                <%= image_tag product.image.variant(
+                    format: :png,
+                    resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+                ) %>
+            </div>
+            <div id="prodinfo">
+                <span style="color:black"><%= "Price: $" + product.price.to_s %></span>
+            </div>
+        
+            <div class="button1 mx-auto">
+                <%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
+            </div>
+    
+    </div>
+<% end %>
+</tbody>
