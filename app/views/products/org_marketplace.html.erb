@@ -1,10 +1,48 @@
-<div id="marketplace">
-	<h1>Products sold by <%= User.find_by_id(params[:org_id]).first %></h1>
-</div>
+<nav id="nav-header" class="text-left">
+	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
+		<a id="home-btn" href="/"><span>Mporium</span></a>
+	</div>
+	<div id="logo"> </div>	
+
+	<div id="no-drop">
+		<a href="marketplace">MARKETPLACE</a>
+	</div>
+	<div id="no-drop">
+		<a href="sign_in">LOG IN</a>
+	</div>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
+	</div>
+	<div id="no-drop">
+		<%= link_to 'CART', view_cart_path %>
+	</div>
+
+</nav>
 
 <br>
-<%= link_to 'Back to Marketplace', "/marketplace" %> 
-<br>
+<div id="bkbtn">
+	<%= link_to '< Back to Marketplace', "/marketplace" %>
+</div>
+
+<div id="marketplace">
+	<h1>Products sold by <%= User.find_by_id(params[:org_id]).first %></h1>
+	<a class="btn btn-primary" href="/view_cart" role="button">View Cart</a>
+</div>
+
+<div class="col d-flex justify-content-center">
+	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
+		<%= f.input :referral_code, input_html: { name: "referral_code" }, :required => false %>
+		<%= f.button :submit, "Set referral code" %>
+	<% end %>
+</div>
 
 <% @products.each do |product| %>
 	<div class="card">
@@ -22,7 +60,7 @@
 				<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
 			</div>
 		
-		<a href="checkout" class="button1 mx-auto">Add to Cart</a>
+		<%= button_to 'Add to Cart', add_to_cart_path(product.id), method: :post %>
 		<br>
 	</div>
 <% end %>

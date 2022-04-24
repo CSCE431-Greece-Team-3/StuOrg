@@ -22,7 +22,8 @@
               ) %>
             </div>
             <div id="prodinfo">
-              <%= "Price: $" + product.price.to_s %>
+              <%= "Price: $" + product.price.to_s %> <br>
+              <%= "Quantity: " + product.quantity.to_s%>
             </div>
             <div id="prodinfo">
               <%= button_to 'Edit Product', edit_product_path(product), method: :get %>

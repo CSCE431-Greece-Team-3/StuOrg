@@ -1,58 +1,28 @@
-
-
 <nav id="nav-header" class="text-left">
 	<div id="logo" class="text-left">
-        <%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			PRODUCTS
-		</a>
 
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Apparel</a>
-			<a class="dropdown-item" href="#">Stationary</a>
-			<a class="dropdown-item" href="#">Events</a>
-			<a class="dropdown-item" href="#">Miscellanious</a>
-		</div>
-	</div>
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		ORGANIZATIONS
-		</a>
-		
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Academic</a>
-			<a class="dropdown-item" href="#">Arts</a>
-			<a class="dropdown-item" href="#">FLOs</a>
-			<a class="dropdown-item" href="#">Greek Life</a>
-			<a class="dropdown-item" href="#">Health/Rec</a>
-			<a class="dropdown-item" href="#">International</a>
-			<a class="dropdown-item" href="#">Professional</a>
-			<a class="dropdown-item" href="#">Political</a>
-			<a class="dropdown-item" href="#">Religious</a>
-			<a class="dropdown-item" href="#">Service</a>
-			<a class="dropdown-item" href="#">Social</a>
-			<a class="dropdown-item" href="#">Special Interest</a>
-		</div>
-	</div>
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
 	</div>
 	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
 	</div>
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			SIGN UP
 		</a>
 
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Organization</a>
+			<a class="dropdown-item" href="signup_organization">Organization</a>
 			<a class="dropdown-item" href="signup_member">Member</a>
 		</div>
+	</div>
+	<div id="no-drop">
+		<%= link_to 'CART', view_cart_path %>
 	</div>
 
 </nav>
@@ -88,8 +58,16 @@
                                                 <span visibility: hidden><%= f.submit "Create Account"%></span>
                                                 <span class="button__text" class="container text-center">Create Account</span>
                                             </button>
-                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-											<%= link_to "Sign Up with Google", '/auth/google_oauth2?from=user', method: :post %>
+
+											<p class="mb-0 mt-4 text-center"><%= link_to "Sign Up with Google", '/auth/google_oauth2?from=user', method: :post %></p>
+
+											<span id="err-msg" class="container text-center">
+												<% flash.each do |type, msg| %>
+													<div>
+														<%= msg %>
+													</div>
+												<% end %>
+											</span>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -105,13 +83,6 @@
 
     <br>
 
-	<span id="err-msg" class="container text-center">
-		<% flash.each do |type, msg| %>
-			<div>
-				<%= msg %>
-			</div>
-		<% end %>
-	</span>
 
 
 

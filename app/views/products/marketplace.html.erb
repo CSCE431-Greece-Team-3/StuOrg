@@ -5,28 +5,26 @@
 	</div>
 	<div id="logo"> </div>	
 	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-			PRODUCTS
-		</a>
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
+			<%# PRODUCTS %>
+		<%# </a> %>
 
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="button">
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
 			<%= form_with(url: "/tag_marketplace") do |f| %>
-				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, include_blank: true %>
-				<%= f.submit %>
+				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, {:include_blank => "PRODUCTS"}, { class: "form-control", onchange: 'this.form.submit()'} %>
 			<% end %>
-		</div>
+		<%# </div> %>
 	</div>
 	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		ORGANIZATIONS
-		</a>
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> %>
+		<%# ORGANIZATIONS %>
+		<%# </a> %>
 		
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<%# <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> %>
 			<%= form_with(url: "/org_marketplace") do |f| %>
-				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, include_blank: true %>
-				<%= f.submit %>
+				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, {:include_blank => "ORGANIZATIONS"}, { class: "form-control", onchange: 'this.form.submit()'} %> 
 			<% end %>
-		</div>
+		<%# </div> %>
 	</div>
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
@@ -48,21 +46,17 @@
 </nav>
 
 
-
-
-
-
-
-
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
-	<%= link_to 'View Cart', view_cart_path %>
-	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
-	<%= f.input :referral_code, input_html: { name: "referral_code" } %>
-	<%= f.button :submit, "Set referral code" %>
-<% end %>
+	<a class="btn btn-primary" href="/view_cart" role="button">View Cart</a>
 </div>
 
+<div class="col d-flex justify-content-center">
+	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
+		<%= f.input :referral_code, input_html: { name: "referral_code" }, :required => false %>
+		<%= f.button :submit, "Set referral code" %>
+	<% end %>
+</div>
 
 <br>
 <div id="marketplace" class="mx-auto">

@@ -1,23 +1,86 @@
+<nav id="nav-header" class="text-left">
+	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
+		<a id="home-btn" href="/"><span>Mporium</span></a>
+	</div>
+	<div id="logo"> </div>	
+
+	<div id="no-drop">
+		<a href="marketplace">MARKETPLACE</a>
+	</div>
+	<div id="no-drop">
+		<a href="sign_in">LOG IN</a>
+	</div>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
+	</div>
+	<div id="no-drop">
+		<%= link_to 'CART', view_cart_path %>
+	</div>
+
+</nav>
+
 <p id="notice"><%= notice %></p>
 
-<h1><span style = "color:white">Howdy</span></h1>
+
 <% if logged_in_member? %>
     <% if User.find_by_id(current_member.users_id) == nil %>
 
-        <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
-        <h2><span style = "color:white">You are currently not in any Organizations.</span></h2>  
+        <div id="member" >
+            <h3 class="text-center"><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
+        </div>
+
+    <div class="col d-flex justify-content-center">
+        <div id="memdash" class="card mx-auto">
+            <h4><span >You are currently not in any Organizations.</span></h2>  
+        </div>
+    </div>
 
     <% else %>
-        <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>
-        <h2><span style = "color:white">Organizations:</span></h2>
-        <span style = "color:white"><%= User.find_by_id(current_member.users_id).first %></span>
-    
+
+        <div id="member">
+            <h3 class="text-center"><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>        
+        </div>
+
+    <div class="col d-flex justify-content-center">
+        <div id="memdash" class="card mx-auto">
+            <h2><span >Organizations:</span></h2>
+            <span ><%= User.find_by_id(current_member.users_id).first %></span>
+        </div>
+    </div>
+
     <%end%>
 <%end%>
 
-<h3><span style = "color:white">Referral Code: <%= current_member.referral_code %></span></h3>
+<br>
+<div class="col d-flex justify-content-center">
+    <div id="memdash" class="card mx-auto">
+        <h4><span >Referral Code: </span></h4> 
+        <h4><span > <%= current_member.referral_code %> </span></h4> 
+    </div>
+</div>
 
-<h3><span style = "color:white">Number of products you have referred: <%= current_member.num_referred %></span></h3>
+<br>
 
-<%= link_to 'Edit Profile', "/edit_mem" %> |
-<%= button_to 'Logout', logout_path, :method => :delete %>
+<div class="col d-flex justify-content-center">
+    <div id="memdash" class="card mx-auto">
+        <h4><span >Number of products referred: </span></h4>
+        <h4><span > <%= current_member.num_referred %> </span></h4>
+    </div>
+</div>
+
+<br>
+
+<div id="bkbtn" class="text-center mx-auto">
+    <%= link_to 'Edit Profile', "/edit_mem" %> 
+</div>
+<div style="padding:10px"class="text-center mx-auto">
+    <%= button_to 'Logout', logout_path, :method => :delete %>
+</div>

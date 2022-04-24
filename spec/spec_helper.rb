@@ -45,6 +45,21 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+      :provider => "google_oauth2",
+      :info => {
+        :first_name => "Tony",
+        :last_name => "Stark",
+        :email => "tony@stark.com"
+      },
+      :credentials => {
+        :token => "token",
+        :refresh_token => "refresh token"
+      }
+    }
+  )
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
