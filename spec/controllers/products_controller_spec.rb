@@ -68,8 +68,8 @@ RSpec.describe ProductsController, type: :controller do
 
     describe "gets" do
         it "the tag marketplace" do 
-            @tag_id = 1
-            post :tag_marketplace, params: {:tag_id => @tag_id}
+            @tag = Tag.find_by_name("Shirt")
+            post :tag_marketplace, params: {:tag_id => @tag.id}
             expect(response.body).to eq ""
         end
     end

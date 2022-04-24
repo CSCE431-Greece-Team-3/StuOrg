@@ -8,12 +8,6 @@ class ProductsController < ApplicationController
     @products = @user.products.all
   end
 
-  def tag_index
-    @user = User.find_by_id(session[:id])
-    @tag = params[:tag]
-    params[:tag] ? @products = @user.products.tagged_with(params[:tag]) : @products = @user.products.all
-  end 
-
   def marketplace
     @tags = Tag.all
     @users = User.all
@@ -88,8 +82,6 @@ class ProductsController < ApplicationController
     @product_ids = Tagging.where(tag_id: params[:tag_id]).pluck(:product_id)
 
     @products = Product.where(id: @product_ids)
-
-    # @products = @taggings.where(@)
   end
 
   # GET /products/1 or /products/1.json
@@ -158,8 +150,8 @@ class ProductsController < ApplicationController
       @product = Product.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
-    def product_params
-      params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids, :quantity)
-    end
+    # # Only allow a list of trusted parameters through.
+    # def product_params
+    #   params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids, :quantity)
+    # end
 end
