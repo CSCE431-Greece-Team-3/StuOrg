@@ -43,6 +43,8 @@ Rails.application.routes.draw do
 
   get "/dashboard", to: "dashboards#dashboard"
 
+  get "/dashboard_members", to: "dashboards#members"
+
   get "products", to: "articles#products"
   get "/view_members", to: "users#index"
   get "profile", to: "dashboards#dashboard"

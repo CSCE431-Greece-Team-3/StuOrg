@@ -19,9 +19,9 @@ RSpec.describe DashboardsController, type: :controller do
         end
     end
 
-    # describe "gets" do
-    #     it "the members" do
-    #         get :members, session: {:id => @user.id}
-    #     end
-    # end
+    describe "gets" do
+        it "the members" do
+            get :members, session: {:id => @user.id}
+        end
+    end
 end
