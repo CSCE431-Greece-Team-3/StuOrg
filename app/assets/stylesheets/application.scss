@@ -188,15 +188,16 @@ a.nav-link.py-2.px-3.active {
   padding: 6px;
   border-radius: 20px;
   width: 10%;
-}
-#bkbtn:hover {
   background-color: var(--color2);
 }
+#bkbtn:hover {
+  background-color: var(--color1);
+}
 #bkbtn a {
-  color: var(--color2);
+  color: var(--color1);
 }
 #bkbtn:hover a {
-  color: var(--color1);
+  color: var(--color2);
 }
 // <<<<<<<<< end of members
 
@@ -606,6 +607,27 @@ h6 span{
   background-color: var(--color1);
 }
 
+#memdash {
+  border: 2px solid var(--color2);
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 50%;
+  margin-left: 35%;
+  margin-right: 65%;
+  padding: 10px;
+}
+#memdash h4 {
+  font-size: 175%;
+}
+#member h1 {
+  font-size: 75px;
+  color: var(--color2);
+  padding: 30px;
+}
+#member h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
 
 a.button1{
   display:inline-block;

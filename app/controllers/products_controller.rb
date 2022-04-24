@@ -73,12 +73,17 @@ class ProductsController < ApplicationController
   end
 
   def org_marketplace
+    if params[:org_id] == nil
+      redirect_to "/marketplace"
+    end
     @products = Product.where(user_id: params[:org_id])
   end
 
   def tag_marketplace
+    if params[:tag_id] == nil
+      redirect_to "/marketplace"
+    end
     @selected_tag = Tag.find_by_id(params[:tag_id]).name
-
     @product_ids = Tagging.where(tag_id: params[:tag_id]).pluck(:product_id)
 
     @products = Product.where(id: @product_ids)
