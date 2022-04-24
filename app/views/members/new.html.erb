@@ -60,8 +60,16 @@
                                                 <span visibility: hidden><%= f.submit "Create Account"%></span>
                                                 <span class="button__text" class="container text-center">Create Account</span>
                                             </button>
-                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-											<%= link_to "Sign Up with Google", '/auth/google_oauth2?from=member', method: :post %>
+
+											<p class="mb-0 mt-4 text-center"><%= link_to "Sign Up with Google", '/auth/google_oauth2?from=member', method: :post %></p>
+
+											<span id="err-msg" class="container text-center">
+												<% flash.each do |type, msg| %>
+													<div>
+														<%= msg %>
+													</div>
+												<% end %>
+											</span>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -76,11 +84,3 @@
 	   <% end %>
 
     <br>
-
-	<span id="err-msg" class="container text-center">
-		<% flash.each do |type, msg| %>
-			<div>
-				<%= msg %>
-			</div>
-		<% end %>
-	</span>
