@@ -5,26 +5,17 @@
 	</div>
 	<div id="logo"> </div>	
 	<div class="dropdown">
-		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
-			<%# PRODUCTS %>
-		<%# </a> %>
 
-		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
-			<%= form_with(url: "/tag_marketplace") do |f| %>
-				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, {:include_blank => "PRODUCTS"}, { class: "form-control", onchange: 'this.form.submit()'} %>
-			<% end %>
-		<%# </div> %>
+		<%= form_with(url: "/tag_marketplace") do |f| %>
+			<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, {:include_blank => "PRODUCTS"}, { class: "form-control", onchange: 'this.form.submit()'} %>
+		<% end %>
 	</div>
 	<div class="dropdown">
-		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> %>
-		<%# ORGANIZATIONS %>
-		<%# </a> %>
-		
-		<%# <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> %>
-			<%= form_with(url: "/org_marketplace") do |f| %>
-				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, {:include_blank => "ORGANIZATIONS"}, { class: "form-control", onchange: 'this.form.submit()'} %> 
-			<% end %>
-		<%# </div> %>
+
+		<%= form_with(url: "/org_marketplace") do |f| %>
+			<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, {:include_blank => "ORGANIZATIONS"}, { class: "form-control", onchange: 'this.form.submit()'} %> 
+		<% end %>
+
 	</div>
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
@@ -51,11 +42,20 @@
 	<a class="btn btn-primary" href="/view_cart" role="button">View Cart</a>
 </div>
 
-<div class="col d-flex justify-content-center">
+<div class="col d-flex justify-content-center text-center">
 	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
 		<%= f.input :referral_code, input_html: { name: "referral_code" }, :required => false %>
 		<%= f.button :submit, "Set referral code" %>
 	<% end %>
+</div>
+
+<br>
+<br>
+
+<div class="col d-flex justify-content-center text-center">
+<%= form_with(url: "/marketplace") do |f| %>
+	<%= f.select :sort, options_for_select(["Increasing Price", "Decreasing Price"]), {:include_blank => "SORT BY"}, { onchange: 'this.form.submit()'} %>
+<% end %>
 </div>
 
 <br>
