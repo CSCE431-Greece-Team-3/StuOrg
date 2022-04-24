@@ -5,29 +5,26 @@
 	</div>
 	<div id="logo"> </div>	
 	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-			PRODUCTS
-		</a>
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
+			<%# PRODUCTS %>
+		<%# </a> %>
 
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="button">
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> %>
 			<%= form_with(url: "/tag_marketplace") do |f| %>
-				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] } %>
-				<%= f.submit %>
+				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, {:include_blank => "PRODUCTS"}, { class: "form-control", onchange: 'this.form.submit()'} %>
 			<% end %>
-		</div>
+		<%# </div> %>
 	</div>
 	<div class="dropdown">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		ORGANIZATIONS
-		</a>
+		<%# <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> %>
+		<%# ORGANIZATIONS %>
+		<%# </a> %>
 		
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<%# <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> %>
 			<%= form_with(url: "/org_marketplace") do |f| %>
-				<%= f.select :org_id, @users.map { |u| [u.first, u.id] } %> 
-				<br>
-				<%= f.submit %>
+				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, {:include_blank => "ORGANIZATIONS"}, { class: "form-control", onchange: 'this.form.submit()'} %> 
 			<% end %>
-		</div>
+		<%# </div> %>
 	</div>
 	<div id="no-drop">
 		<a href="marketplace">MARKETPLACE</a>
