@@ -86,19 +86,6 @@ class ProductsController < ApplicationController
     @products = Product.where(user_id: params[:org_id])
   end
 
-  def sorted_marketplace
-    @tags = Tag.all
-    @users = User.all
-    @products = Product.order(:id).all
-    if params[:sort] == "Increasing Price"
-      @products = @products.order(:id).all.sort_by { |p| [p.price] }
-    elsif params[:sort] == "Decreasing Price"
-      @products = @products.order(:id).all.sort_by { |p| [p.price] }.reverse
-    else
-      @products = Product.all
-    end
-  end
-
   def tag_marketplace
     if params[:tag_id] == nil
       redirect_to "/marketplace"

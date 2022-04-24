@@ -15,8 +15,14 @@ RSpec.describe ProductsController, type: :controller do
         post :create, session: {:id => @user.id}, params: {:product => {:title => "Metal Bottle", :image => @image, :price => 10.99, :quantity => 10, :tags => nil}}
         end
 
+        if Member.where(:username => "rspec_member@gmail.com").empty?
+            Member.create(:username => "rspec_member@gmail.com", :password => "12345678", :first => "rspec", :last => "user", :num_referred => 0, :referral_code => "refer")
+        end
+        
+        @member = Member.find_by_username("rspec_member@gmail.com")
+
         @product = Product.find_by_title("Metal Bottle")
-        post :add_to_cart, params: {:product_id => @product.id}
+        post :add_to_cart, params: {:product_id => @product.id}, session: {:referral => "refer"}
     end
 
     describe "creates" do
@@ -55,8 +61,26 @@ RSpec.describe ProductsController, type: :controller do
     end
 
     describe "gets" do
+        it "the increasing price marketplace" do
+            get :marketplace, params: {:sort => "Increasing Price"}
+        end
+    end
+
+    describe "gets" do
+        it "the decreasing price marketplace" do
+            get :marketplace, params: {:sort => "Decreasing Price"}
+        end
+    end
+
+    describe "gets" do
         it "the marketplace" do
             get :marketplace
+        end
+    end
+
+    describe "gets" do
+        it "the organization's products" do
+            get :index, session: {:id => @user.id}
         end
     end
 
@@ -70,14 +94,18 @@ RSpec.describe ProductsController, type: :controller do
         it "the tag marketplace" do 
             @tag = Tag.find_by_name("Shirt")
             post :tag_marketplace, params: {:tag_id => @tag.id}
-            expect(response.body).to eq ""
         end
     end
 
     describe "gets" do
         it "the org marketplace" do 
             post :org_marketplace, params: {:org_id => @user_id}
-            expect(response.body).to eq ""
+        end
+    end
+
+    describe "posts" do
+        it "the referral" do 
+            post :set_referral, params: {:referral_code => "refer"}
         end
     end
 
