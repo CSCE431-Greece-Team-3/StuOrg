@@ -10,10 +10,10 @@ Scenario: I create a listing
     Then I should be on the login page
     And I should see "Log In"
     Then I log in with "wranglers@gmail.com" username and "12345678" password
-    Then I should be on the profile page
-    And I should see "You are Logged In, Aggie Wranglers"
-    When I press the "Add Product" button
-    Then I should see "Create New Product"
+    Then I should be on the dashboard page
+    And I should see "Aggie Wranglers"
+    When I press the "Products" button
+    Then I should see "Add New Product"
     When I fill in "product_title" with "Water Bottle"
     And I attach the file "features/test_images/water_bottle.jpg" to "product_image"
     When I press the "Create Product" button

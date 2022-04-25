@@ -16,6 +16,7 @@ log/*
 !/log/.keep
 /tmp
 
+config/storage.yml
 .env
 /public/packs
 /public/packs-test
