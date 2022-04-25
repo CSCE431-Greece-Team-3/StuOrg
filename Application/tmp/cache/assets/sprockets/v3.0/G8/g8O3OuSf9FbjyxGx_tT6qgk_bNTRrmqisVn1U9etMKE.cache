@@ -1,0 +1,46 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/th.json?type=application/json&id=58af78b97b9992c84a3a30afe0da3fd7371a9eb55fe7519ec10ea17588e0668a:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/th.json;T:	nameI",gulp-copy/node_modules/yargs/locales/th;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/th.json;T:content_typeI"application/json;T:sourceI"�
+{
+  "Commands:": "คอมมาน",
+  "Options:": "ออฟชั่น",
+  "Examples:": "ตัวอย่าง",
+  "boolean": "บูลีน",
+  "count": "นับ",
+  "string": "สตริง",
+  "number": "ตัวเลข",
+  "array": "อาเรย์",
+  "required": "จำเป็น",
+  "default:": "ค่าเริ่มต้น",
+  "choices:": "ตัวเลือก",
+  "aliases:": "เอเลียส",
+  "generated-value": "ค่าที่ถูกสร้างขึ้น",
+  "Not enough non-option arguments: got %s, need at least %s": "ใส่อาร์กิวเมนต์ไม่ครบตามจำนวนที่กำหนด: ใส่ค่ามาจำนวน %s ค่า, แต่ต้องการอย่างน้อย %s ค่า",
+  "Too many non-option arguments: got %s, maximum of %s": "ใส่อาร์กิวเมนต์เกินจำนวนที่กำหนด: ใส่ค่ามาจำนวน %s ค่า, แต่ต้องการมากที่สุด %s ค่า",
+  "Missing argument value: %s": {
+    "one": "ค่าอาร์กิวเมนต์ที่ขาดไป: %s",
+    "other": "ค่าอาร์กิวเมนต์ที่ขาดไป: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "อาร์กิวเมนต์จำเป็นที่ขาดไป: %s",
+    "other": "อาร์กิวเมนต์จำเป็นที่ขาดไป: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "อาร์กิวเมนต์ที่ไม่รู้จัก: %s",
+    "other": "อาร์กิวเมนต์ที่ไม่รู้จัก: %s"
+  },
+  "Invalid values:": "ค่าไม่ถูกต้อง:",
+  "Argument: %s, Given: %s, Choices: %s": "อาร์กิวเมนต์: %s, ได้รับ: %s, ตัวเลือก: %s",
+  "Argument check failed: %s": "ตรวจสอบพบอาร์กิวเมนต์ที่ไม่ถูกต้อง: %s",
+  "Implications failed:": "Implications ไม่สำเร็จ:",
+  "Not enough arguments following: %s": "ใส่อาร์กิวเมนต์ไม่ครบ: %s",
+  "Invalid JSON config file: %s": "ไฟล์คอนฟิค JSON ไม่ถูกต้อง: %s",
+  "Path to JSON config file": "พาทไฟล์คอนฟิค JSON",
+  "Show help": "ขอความช่วยเหลือ",
+  "Show version number": "แสดงตัวเลขเวอร์ชั่น",
+  "Did you mean %s?": "คุณหมายถึง %s?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/th.json;TTF:charsetI"
+utf-8;F:digest"%�=���C2�p�Z4k�Ji��T��?�baE:lengthi�
+:dependencies_digest"%g���ۤ����t�l�d�$���mHg�F�.:idI"E58af78b97b9992c84a3a30afe0da3fd7371a9eb55fe7519ec10ea17588e0668a;F:
+mtimel+�Ib

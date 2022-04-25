@@ -1,0 +1,32 @@
+{:uriI"file://app/assets/vendor/jekyll/site/_layouts/news_item.html?type=text/html&id=c6fe8ed130e118e4d198c971c8ca0361cc4fa58fa9da125e10f8ac5f11a79564:ET:load_pathI"app/assets/vendor;T:filenameI":app/assets/vendor/jekyll/site/_layouts/news_item.html;T:	nameI"#jekyll/site/_layouts/news_item;T:logical_pathI"(jekyll/site/_layouts/news_item.html;T:content_typeI"text/html;T:sourceI"±---
+layout: news
+---
+
+<article>
+  <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="permalink" title="Permalink">âˆ</a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      {{ page.categories | array_to_sentence_string }}
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ page.date | date_to_string }}
+    </span>
+    <a href="https://github.com/{{ page.author }}" class="post-author">
+      <img src="https://github.com/{{ page.author }}.png" class="avatar" alt="{{ page.author }} avatar" width="24" height="24">
+      {{ page.author }}
+    </a>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/vendor/jekyll/site/_layouts/news_item.html;TTF:charsetI"
+utf-8;F:digest"%°œ»úòY:ç´Êœ©„şÆó¹y{|Çdúü÷*ˆÖ:lengthi±:dependencies_digest"%y;Ïvƒì/NQº¹ı´i{£CƒWp{8X| ÅO:idI"Ec6fe8ed130e118e4d198c971c8ca0361cc4fa58fa9da125e10f8ac5f11a79564;F:
+mtimel+b&b

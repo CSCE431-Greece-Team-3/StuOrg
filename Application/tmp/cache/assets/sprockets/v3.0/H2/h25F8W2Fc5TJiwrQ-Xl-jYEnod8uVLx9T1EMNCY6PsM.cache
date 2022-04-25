@@ -1,0 +1,42 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_CN.json?type=application/json&id=1a1bc68e94219d567c7cdd076afbd39a7754be30e6d8a8f282e7bdec48b3b7b8:ET:load_pathI"app/assets/vendor;T:filenameI"Fapp/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_CN.json;T:	nameI"/gulp-copy/node_modules/yargs/locales/zh_CN;T:logical_pathI"4gulp-copy/node_modules/yargs/locales/zh_CN.json;T:content_typeI"application/json;T:sourceI"�{
+  "Commands:": "命令：",
+  "Options:": "选项：",
+  "Examples:": "示例：",
+  "boolean": "布尔",
+  "count": "计数",
+  "string": "字符串",
+  "number": "数字",
+  "array": "数组",
+  "required": "必需",
+  "default:": "默认值:",
+  "choices:": "可选值:",
+  "generated-value": "生成的值",
+  "Not enough non-option arguments: got %s, need at least %s": "缺少 non-option 参数：传入了 %s 个, 至少需要 %s 个",
+  "Too many non-option arguments: got %s, maximum of %s": "non-option 参数过多：传入了 %s 个, 最大允许 %s 个",
+  "Missing argument value: %s": {
+    "one": "没有给此选项指定值：%s",
+    "other": "没有给这些选项指定值：%s"
+  },
+  "Missing required argument: %s": {
+    "one": "缺少必须的选项：%s",
+    "other": "缺少这些必须的选项：%s"
+  },
+  "Unknown argument: %s": {
+    "one": "无法识别的选项：%s",
+    "other": "无法识别这些选项：%s"
+  },
+  "Invalid values:": "无效的选项值：",
+  "Argument: %s, Given: %s, Choices: %s": "选项名称: %s, 传入的值: %s, 可选的值：%s",
+  "Argument check failed: %s": "选项值验证失败：%s",
+  "Implications failed:": "缺少依赖的选项：",
+  "Not enough arguments following: %s": "没有提供足够的值给此选项：%s",
+  "Invalid JSON config file: %s": "无效的 JSON 配置文件：%s",
+  "Path to JSON config file": "JSON 配置文件的路径",
+  "Show help": "显示帮助信息",
+  "Show version number": "显示版本号"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Tfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_CN.json;TTF:charsetI"
+utf-8;F:digest"%�MB_�16�9��-�H������RK5�4��:lengthi�:dependencies_digest"%K�����w�^�a	ZWrDȪ#���):idI"E1a1bc68e94219d567c7cdd076afbd39a7754be30e6d8a8f282e7bdec48b3b7b8;F:
+mtimel+�Ib

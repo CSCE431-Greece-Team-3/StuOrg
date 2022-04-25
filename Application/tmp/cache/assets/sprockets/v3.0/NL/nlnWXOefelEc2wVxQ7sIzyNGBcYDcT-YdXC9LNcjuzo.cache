@@ -1,0 +1,44 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/be.json?type=application/json&id=8894e72cfb20305b8b1f5ff7bfc3f6799fbbc7de9fe928fc3c55c95503e9d204:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/be.json;T:	nameI",gulp-copy/node_modules/yargs/locales/be;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/be.json;T:content_typeI"application/json;T:sourceI"�{
+  "Commands:": "Каманды:",
+  "Options:": "Опцыі:",
+  "Examples:": "Прыклады:",
+  "boolean": "булевы тып",
+  "count": "падлік",
+  "string": "радковы тып",
+  "number": "лік",
+  "array": "масіў",
+  "required": "неабходна",
+  "default:": "па змаўчанні:",
+  "choices:": "магчымасці:",
+  "aliases:": "аліасы:",
+  "generated-value": "згенераванае значэнне",
+  "Not enough non-option arguments: got %s, need at least %s": "Недастаткова неапцыйных аргументаў: ёсць %s, трэба як мінімум %s",
+  "Too many non-option arguments: got %s, maximum of %s": "Занадта шмат неапцыйных аргументаў: ёсць %s, максімум дапушчальна %s",
+  "Missing argument value: %s": {
+    "one": "Не хапае значэння аргументу: %s",
+    "other": "Не хапае значэнняў аргументаў: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Не хапае неабходнага аргументу: %s",
+    "other": "Не хапае неабходных аргументаў: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Невядомы аргумент: %s",
+    "other": "Невядомыя аргументы: %s"
+  },
+  "Invalid values:": "Несапраўдныя значэння:",
+  "Argument: %s, Given: %s, Choices: %s": "Аргумент: %s, Дадзенае значэнне: %s, Магчымасці: %s",
+  "Argument check failed: %s": "Праверка аргументаў не ўдалася: %s",
+  "Implications failed:": "Дадзены аргумент патрабуе наступны дадатковы аргумент:",
+  "Not enough arguments following: %s": "Недастаткова наступных аргументаў: %s",
+  "Invalid JSON config file: %s": "Несапраўдны файл канфігурацыі JSON: %s",
+  "Path to JSON config file": "Шлях да файла канфігурацыі JSON",
+  "Show help": "Паказаць дапамогу",
+  "Show version number": "Паказаць нумар версіі",
+  "Did you mean %s?": "Вы мелі на ўвазе %s?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/be.json;TTF:charsetI"
+utf-8;F:digest"%���ȥ�R�~1��QL��O�}k.�41'��:lengthi�:dependencies_digest"%_���Z��a.�)M�_Ш��G�«˒�m�-a�:idI"E8894e72cfb20305b8b1f5ff7bfc3f6799fbbc7de9fe928fc3c55c95503e9d204;F:
+mtimel+�Ib

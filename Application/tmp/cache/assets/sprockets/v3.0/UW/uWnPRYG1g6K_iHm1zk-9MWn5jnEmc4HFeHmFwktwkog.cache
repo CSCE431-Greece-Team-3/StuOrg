@@ -1,0 +1,26 @@
+{:uriI"Žfile://app/assets/vendor/jekyll/site/_includes/docs_ul.html?type=text/html&id=1a6f65de0191d0d71efe1254f46fa38d7f97c47ca059c15f866e499610eb2d3d:ET:load_pathI"app/assets/vendor;T:filenameI"9app/assets/vendor/jekyll/site/_includes/docs_ul.html;T:	nameI""jekyll/site/_includes/docs_ul;T:logical_pathI"'jekyll/site/_includes/docs_ul.html;T:content_typeI"text/html;T:sourceI"È{% assign items = include.items %}
+
+<ul>
+{% for item in items %}
+  {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+
+  {% if item_url == page.url %}
+    {% assign c = "current" %}
+  {% else %}
+    {% assign c = "" %}
+  {% endif %}
+
+  {% for p in site.docs %}
+    {% if p.url == item_url %}
+      <li class="{{ c }}"><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></li>
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+{% endfor %}
+</ul>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://app/assets/vendor/jekyll/site/_includes/docs_ul.html;TTF:charsetI"
+utf-8;F:digest"%7÷gF€éFíTO…é¸§r<ÙvãP«öàÿÂ:lengthiÈ:dependencies_digest"%Lÿåµƒ^žõòz5]Â ‘ë½TøÊ"¦,¼úðª2:idI"E1a6f65de0191d0d71efe1254f46fa38d7f97c47ca059c15f866e499610eb2d3d;F:
+mtimel+û"b

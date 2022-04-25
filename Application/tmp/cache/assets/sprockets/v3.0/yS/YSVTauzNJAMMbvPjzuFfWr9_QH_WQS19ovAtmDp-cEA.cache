@@ -1,0 +1,45 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_TW.json?type=application/json&id=d5b586c846085ac09e3c25b0c1e527f4437fa4a96de7cfe0691906c63da68681:ET:load_pathI"app/assets/vendor;T:filenameI"Fapp/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_TW.json;T:	nameI"/gulp-copy/node_modules/yargs/locales/zh_TW;T:logical_pathI"4gulp-copy/node_modules/yargs/locales/zh_TW.json;T:content_typeI"application/json;T:sourceI"N{
+  "Commands:": "命令：",
+  "Options:": "選項：",
+  "Examples:": "例：",
+  "boolean": "布林",
+  "count": "次數",
+  "string": "字串",
+  "number": "數字",
+  "array": "陣列",
+  "required": "必須",
+  "default:": "預設值:",
+  "choices:": "可選值:",
+  "aliases:": "別名:",
+  "generated-value": "生成的值",
+  "Not enough non-option arguments: got %s, need at least %s": "non-option 引數不足：只傳入了 %s 個, 至少要 %s 個",
+  "Too many non-option arguments: got %s, maximum of %s": "non-option 引數過多：傳入了 %s 個, 但最多 %s 個",
+  "Missing argument value: %s": {
+    "one": "此引數無指定值：%s",
+    "other": "這些引數無指定值：%s"
+  },
+  "Missing required argument: %s": {
+    "one": "缺少必須的引數：%s",
+    "other": "缺少這些必須的引數：%s"
+  },
+  "Unknown argument: %s": {
+    "one": "未知的引數：%s",
+    "other": "未知的這些引數：%s"
+  },
+  "Invalid values:": "無效的選項值：",
+  "Argument: %s, Given: %s, Choices: %s": "引數名稱: %s, 傳入的值: %s, 可選的值：%s",
+  "Argument check failed: %s": "引數驗證失敗：%s",
+  "Implications failed:": "缺少依賴的選項：",
+  "Not enough arguments following: %s": "沒有提供足夠的值給此引數：%s",
+  "Invalid JSON config file: %s": "無效的 JSON 設置文件：%s",
+  "Path to JSON config file": "JSON 設置文件的路徑",
+  "Show help": "顯示說明",
+  "Show version number": "顯示版本",
+  "Did you mean %s?": "是指 %s?",
+  "Arguments %s and %s are mutually exclusive" : "引數 %s 和 %s 是互斥的"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Tfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/zh_TW.json;TTF:charsetI"
+utf-8;F:digest"%m.7P����;iD�,��ܔ"~����8�:lengthiN:dependencies_digest"%6P�CH#ƪ����͔���8Q�8�RԲ0�:idI"Ed5b586c846085ac09e3c25b0c1e527f4437fa4a96de7cfe0691906c63da68681;F:
+mtimel+D�a

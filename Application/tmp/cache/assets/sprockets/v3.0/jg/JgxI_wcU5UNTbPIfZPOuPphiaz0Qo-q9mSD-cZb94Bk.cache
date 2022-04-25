@@ -1,0 +1,16 @@
+{:uriI"file://app/assets/vendor/jekyll/site/news/releases/index.html?type=text/html&id=88eec1d17b9fea62ea898ba46f19b9b9cb2f1af396e71b5a42631989fa587919:ET:load_pathI"app/assets/vendor;T:filenameI";app/assets/vendor/jekyll/site/news/releases/index.html;T:	nameI"$jekyll/site/news/releases/index;T:logical_pathI")jekyll/site/news/releases/index.html;T:content_typeI"text/html;T:sourceI"£---
+layout: news
+title: Releases
+permalink: /news/releases/
+author: all
+---
+
+{% for post in site.categories.release %}
+  {% include news_item.html %}
+{% endfor %}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://app/assets/vendor/jekyll/site/news/releases/index.html;TTF:charsetI"
+utf-8;F:digest"%1E³ö&Ç©oï9ˆLºÎ“F~JÛ²èëc'».
+…:lengthi£:dependencies_digest"%İxØ2S%ªï±°ºéÃ³i‚ÿâÏÒPƒûQ.N:idI"E88eec1d17b9fea62ea898ba46f19b9b9cb2f1af396e71b5a42631989fa587919;F:
+mtimel+äIb

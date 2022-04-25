@@ -1,0 +1,44 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/hu.json?type=application/json&id=80076ecf3ea0afe71d46b85fae856f60d6c127a225d860c7bbf96e109ce7b85e:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/hu.json;T:	nameI",gulp-copy/node_modules/yargs/locales/hu;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/hu.json;T:content_typeI"application/json;T:sourceI"u{
+  "Commands:": "Parancsok:",
+  "Options:": "Opciók:",
+  "Examples:": "Példák:",
+  "boolean": "boolean",
+  "count": "számláló",
+  "string": "szöveg",
+  "number": "szám",
+  "array": "tömb",
+  "required": "kötelező",
+  "default:": "alapértelmezett:",
+  "choices:": "lehetőségek:",
+  "aliases:": "aliaszok:",
+  "generated-value": "generált-érték",
+  "Not enough non-option arguments: got %s, need at least %s": "Nincs elég nem opcionális argumentum: %s van, legalább %s kell",
+  "Too many non-option arguments: got %s, maximum of %s": "Túl sok nem opciánlis argumentum van: %s van, maximum %s lehet",
+  "Missing argument value: %s": {
+    "one": "Hiányzó argumentum érték: %s",
+    "other": "Hiányzó argumentum értékek: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Hiányzó kötelező argumentum: %s",
+    "other": "Hiányzó kötelező argumentumok: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Ismeretlen argumentum: %s",
+    "other": "Ismeretlen argumentumok: %s"
+  },
+  "Invalid values:": "Érvénytelen érték:",
+  "Argument: %s, Given: %s, Choices: %s": "Argumentum: %s, Megadott: %s, Lehetőségek: %s",
+  "Argument check failed: %s": "Argumentum ellenőrzés sikertelen: %s",
+  "Implications failed:": "Implikációk sikertelenek:",
+  "Not enough arguments following: %s": "Nem elég argumentum követi: %s",
+  "Invalid JSON config file: %s": "Érvénytelen JSON konfigurációs file: %s",
+  "Path to JSON config file": "JSON konfigurációs file helye",
+  "Show help": "Súgo megjelenítése",
+  "Show version number": "Verziószám megjelenítése",
+  "Did you mean %s?": "Erre gondoltál %s?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/hu.json;TTF:charsetI"
+utf-8;F:digest"%���1���j��r�GT�	����5ڙLq�/�(�:lengthiu:dependencies_digest"%	+v YB�9E2�n�}�FE�mTO*5D'ʟԢ:idI"E80076ecf3ea0afe71d46b85fae856f60d6c127a225d860c7bbf96e109ce7b85e;F:
+mtimel+b&b

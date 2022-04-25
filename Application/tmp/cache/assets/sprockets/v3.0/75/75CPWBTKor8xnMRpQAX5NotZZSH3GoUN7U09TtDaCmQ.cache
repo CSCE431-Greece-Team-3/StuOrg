@@ -1,0 +1,28 @@
+{:uriI"Šfile://app/assets/vendor/jekyll/site/_layouts/docs.html?type=text/html&id=f5cb824e25988b398de300ad142c23d2f9b4851de81e0ca73fd74748403e8f0a:ET:load_pathI"app/assets/vendor;T:filenameI"5app/assets/vendor/jekyll/site/_layouts/docs.html;T:	nameI"jekyll/site/_layouts/docs;T:logical_pathI"#jekyll/site/_layouts/docs.html;T:content_typeI"text/html;T:sourceI"—---
+layout: default
+---
+
+  <section class="docs">
+    <div class="grid">
+
+      {% include docs_contents_mobile.html %}
+
+      <div class="unit four-fifths">
+        <article>
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+          {% include section_nav.html %}
+        </article>
+      </div>
+
+      {% include docs_contents.html %}
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Cfile-digest://app/assets/vendor/jekyll/site/_layouts/docs.html;TTF:charsetI"
+utf-8;F:digest"%ŽzÅ­¶H[LÎóéntw¦¼ÊË¶Ê7ö¤!¹m(t:lengthi—:dependencies_digest"%©p±eó¡ó}…¾ö·ÐtãÛDÌ©Øäõ‹1ãÞ…:idI"Ef5cb824e25988b398de300ad142c23d2f9b4851de81e0ca73fd74748403e8f0a;F:
+mtimel+Dïa

@@ -1,0 +1,44 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/tr.json?type=application/json&id=6ae92c05c17655bf66097f2a362228cbbac8b167d981addafd1c0bf5a7e612e7:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/tr.json;T:	nameI",gulp-copy/node_modules/yargs/locales/tr;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/tr.json;T:content_typeI"application/json;T:sourceI"_{
+  "Commands:": "Komutlar:",
+  "Options:": "Seçenekler:",
+  "Examples:": "Örnekler:",
+  "boolean": "boolean",
+  "count": "sayı",
+  "string": "string",
+  "number": "numara",
+  "array": "array",
+  "required": "zorunlu",
+  "default:": "varsayılan:",
+  "choices:": "seçimler:",
+  "aliases:": "takma adlar:",
+  "generated-value": "oluşturulan-değer",
+  "Not enough non-option arguments: got %s, need at least %s": "Seçenek dışı argümanlar yetersiz: %s bulundu, %s gerekli",
+  "Too many non-option arguments: got %s, maximum of %s": "Seçenek dışı argümanlar gereğinden fazla: %s bulundu, azami %s",
+  "Missing argument value: %s": {
+    "one": "Eksik argüman değeri: %s",
+    "other": "Eksik argüman değerleri: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Eksik zorunlu argüman: %s",
+    "other": "Eksik zorunlu argümanlar: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Bilinmeyen argüman: %s",
+    "other": "Bilinmeyen argümanlar: %s"
+  },
+  "Invalid values:": "Geçersiz değerler:",
+  "Argument: %s, Given: %s, Choices: %s": "Argüman: %s, Verilen: %s, Seçimler: %s",
+  "Argument check failed: %s": "Argüman kontrolü başarısız oldu: %s",
+  "Implications failed:": "Sonuçlar başarısız oldu:",
+  "Not enough arguments following: %s": "%s için yeterli argüman bulunamadı",
+  "Invalid JSON config file: %s": "Geçersiz JSON yapılandırma dosyası: %s",
+  "Path to JSON config file": "JSON yapılandırma dosya konumu",
+  "Show help": "Yardım detaylarını göster",
+  "Show version number": "Versiyon detaylarını göster",
+  "Did you mean %s?": "Bunu mu demek istediniz: %s?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/tr.json;TTF:charsetI"
+utf-8;F:digest"%J�ɕ龳>u�R�RTZK�)`��,)"���:lengthi_:dependencies_digest"%V̟�(3`�pΞ���"�~����n*�U��:idI"E6ae92c05c17655bf66097f2a362228cbbac8b167d981addafd1c0bf5a7e612e7;F:
+mtimel+b&b

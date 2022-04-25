@@ -1,0 +1,35 @@
+{:uriI"êfile://app/assets/vendor/jekyll/site/_includes/analytics.html?type=text/html&id=b3a9a5f0b99f395e4d2bc157402dc76ea65e182f4086ed8aeb96725454d05209:ET:load_pathI"app/assets/vendor;T:filenameI";app/assets/vendor/jekyll/site/_includes/analytics.html;T:	nameI"$jekyll/site/_includes/analytics;T:logical_pathI")jekyll/site/_includes/analytics.html;T:content_typeI"text/html;T:sourceI"{% if site.gauges_id %}
+  <!-- Gauges (http://gaug.es/) -->
+  <script>
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '{{ site.gauges_id }}');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+{% endif %}
+
+{% if site.google_analytics_id %}
+  <!-- Google Analytics (http://google.com/analytics) -->
+  <script>
+    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
+    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
+    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
+    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
+
+    ga('create', '{{ site.google_analytics_id }}', 'jekyllrb.com');
+    ga('send', 'pageview');
+
+  </script>
+{% endif %}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://app/assets/vendor/jekyll/site/_includes/analytics.html;TTF:charsetI"
+utf-8;F:digest"%ü/¨€YËAÎÂXE¨ü·÷ybœQJÔ–%iX[ë:lengthi:dependencies_digest"%Ê‹br0∞#ò£5#‚€¬MCK1#Z¸B>7î∑:idI"Eb3a9a5f0b99f395e4d2bc157402dc76ea65e182f4086ed8aeb96725454d05209;F:
+mtimel+DÔa

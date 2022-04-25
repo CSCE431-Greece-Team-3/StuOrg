@@ -28,6 +28,12 @@ module NavigationHelpers
     when /the profile page/
       '/profile'
 
+    when /the marketplace page/
+      '/marketplace'
+
+    when /the tag marketplace page/
+      '/tag_marketplace'
+
     when /the member profile page/
       '/members/1'
     # Add more mappings here.

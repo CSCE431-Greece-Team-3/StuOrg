@@ -1,0 +1,25 @@
+{:uriI"šfile://app/assets/vendor/jekyll/lib/site_template/_layouts/default.html?type=text/html&id=614fedf44ad18c88f61eea5d404905f9de1843ec12feeda6b63f95d21e66f5d8:ET:load_pathI"app/assets/vendor;T:filenameI"Eapp/assets/vendor/jekyll/lib/site_template/_layouts/default.html;T:	nameI".jekyll/lib/site_template/_layouts/default;T:logical_pathI"3jekyll/lib/site_template/_layouts/default.html;T:content_typeI"text/html;T:sourceI"ø<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Sfile-digest://app/assets/vendor/jekyll/lib/site_template/_layouts/default.html;TTF:charsetI"
+utf-8;F:digest"%+r~ÒSô¢Pp#8¹{š1|Çró$Z‰WÖÂş=Ş:lengthiø:dependencies_digest"%ŒIÒK{ûWç¸ww©P1õ›7À"€EBqU.#Tjë:idI"E614fedf44ad18c88f61eea5d404905f9de1843ec12feeda6b63f95d21e66f5d8;F:
+mtimel+û"b

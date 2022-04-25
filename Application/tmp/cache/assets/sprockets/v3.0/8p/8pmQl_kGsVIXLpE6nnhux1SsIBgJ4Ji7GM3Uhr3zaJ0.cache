@@ -1,0 +1,17 @@
+{:uriI"’file://app/assets/vendor/jekyll/site/_includes/docs_option.html?type=text/html&id=1fbcbd04b5c4e7ba06bca09a0d8a4577bcc833da6d40821421ba44041d3626b2:ET:load_pathI"app/assets/vendor;T:filenameI"=app/assets/vendor/jekyll/site/_includes/docs_option.html;T:	nameI"&jekyll/site/_includes/docs_option;T:logical_pathI"+jekyll/site/_includes/docs_option.html;T:content_typeI"text/html;T:sourceI"){% assign items = include.items %}
+
+{% for item in items %}
+  {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+
+  {% for p in site.docs %}
+    {% if p.url == item_url %}
+      <option value="{{ site.url }}{{ p.url }}">{{ p.title }}</option>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Kfile-digest://app/assets/vendor/jekyll/site/_includes/docs_option.html;TTF:charsetI"
+utf-8;F:digest"%Ì)½½V¡‚©ÖGœ¬O€¥³ã^#ÆcZ]ì:lengthi):dependencies_digest"%©Q’fN(ßií~wLÅÜ!ž„ \•)QÊùd
+ö°â:idI"E1fbcbd04b5c4e7ba06bca09a0d8a4577bcc833da6d40821421ba44041d3626b2;F:
+mtimel+û"b
