@@ -13,4 +13,4 @@ Scenario: I sign up as a member
     And I should see "Member"
     And I will sign up with "Anu" "Khatri", "anukhatri41@gmail.com" username, and "Howdy123" password
     Then I should be on the member profile page
-    And I should see "Howdy"
+    And I should see "Anu"
