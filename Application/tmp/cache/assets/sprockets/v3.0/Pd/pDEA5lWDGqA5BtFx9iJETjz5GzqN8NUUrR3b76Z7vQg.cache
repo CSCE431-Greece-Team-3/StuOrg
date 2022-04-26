@@ -1,24 +1,0 @@
-{:uriI"äfile://app/assets/vendor/jekyll/site/_layouts/news.html?type=text/html&id=e1aaff9df6ed0462a3639638c053d2b3b34630f6dd05e6237c2702ba70481186:ET:load_pathI"app/assets/vendor;T:filenameI"5app/assets/vendor/jekyll/site/_layouts/news.html;T:	nameI"jekyll/site/_layouts/news;T:logical_pathI"#jekyll/site/_layouts/news.html;T:content_typeI"text/html;T:sourceI"#---
-layout: default
----
-
-  <section class="news">
-    <div class="grid">
-
-      {% include news_contents_mobile.html %}
-
-      <div class="unit four-fifths">
-        {{ content }}
-      </div>
-
-      {% include news_contents.html %}
-
-      <div class="clear"></div>
-
-    </div>
-  </section>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Cfile-digest://app/assets/vendor/jekyll/site/_layouts/news.html;TTF:charsetI"
-utf-8;F:digest"%èŒ<z¸1]âãH|»ÊCì¿Ã˛É´/mΩ‚cˇ¿ö:lengthi#:dependencies_digest"%{Q]@ìöõ¬_œÙêç?j‰âÉıKÖ Iä~Îô7ÈB:idI"Ee1aaff9df6ed0462a3639638c053d2b3b34630f6dd05e6237c2702ba70481186;F:
-mtimel+b&b

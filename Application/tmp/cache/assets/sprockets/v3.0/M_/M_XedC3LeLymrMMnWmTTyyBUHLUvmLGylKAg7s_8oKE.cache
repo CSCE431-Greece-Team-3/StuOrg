@@ -1,45 +1,0 @@
-{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ja.json?type=application/json&id=0f8371c5e94acd779a0e47baa2acdf5a31529df400aade1667cae1bacded24b9:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/ja.json;T:	nameI",gulp-copy/node_modules/yargs/locales/ja;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/ja.json;T:content_typeI"application/json;T:sourceI"M{
-  "Commands:": "コマンド:",
-  "Options:": "オプション:",
-  "Examples:": "例:",
-  "boolean": "真偽",
-  "count": "カウント",
-  "string": "文字列",
-  "number": "数値",
-  "array": "配列",
-  "required": "必須",
-  "default:": "デフォルト:",
-  "choices:": "選択してください:",
-  "aliases:": "エイリアス:",
-  "generated-value": "生成された値",
-  "Not enough non-option arguments: got %s, need at least %s": "オプションではない引数が %s 個では不足しています。少なくとも %s 個の引数が必要です:",
-  "Too many non-option arguments: got %s, maximum of %s": "オプションではない引数が %s 個では多すぎます。最大で %s 個までです:",
-  "Missing argument value: %s": {
-    "one": "引数が見つかりません: %s",
-    "other": "引数が見つかりません: %s"
-  },
-  "Missing required argument: %s": {
-    "one": "必須の引数が見つかりません: %s",
-    "other": "必須の引数が見つかりません: %s"
-  },
-  "Unknown argument: %s": {
-    "one": "未知の引数です: %s",
-    "other": "未知の引数です: %s"
-  },
-  "Invalid values:": "不正な値です:",
-  "Argument: %s, Given: %s, Choices: %s": "引数は %s です。指定できるのは %s つです。選択してください: %s",
-  "Argument check failed: %s": "引数のチェックに失敗しました: %s",
-  "Implications failed:": "オプションの組み合わせで不正が生じました:",
-  "Not enough arguments following: %s": "次の引数が不足しています。: %s",
-  "Invalid JSON config file: %s": "JSONの設定ファイルが不正です: %s",
-  "Path to JSON config file": "JSONの設定ファイルまでのpath",
-  "Show help": "ヘルプを表示",
-  "Show version number": "バージョンを表示",
-  "Did you mean %s?": "もしかして %s?"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ja.json;TTF:charsetI"
-utf-8;F:digest"%��(�������j)z�.�̂�A�$�(p� :lengthiM:dependencies_digest"%�1�(�^��^�F��R���
-�"�4�M�:idI"E0f8371c5e94acd779a0e47baa2acdf5a31529df400aade1667cae1bacded24b9;F:
-mtimel+�"b

@@ -1,43 +1,0 @@
-{:uriI"üfile://app/assets/vendor/gulp-copy/node_modules/yargs/locales/pt.json?type=application/json&id=d921065bfa57887913f50c10dbb4fc230166e713226c11e3893d754c33d63e90:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/pt.json;T:	nameI",gulp-copy/node_modules/yargs/locales/pt;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/pt.json;T:content_typeI"application/json;T:sourceI"ë{
-  "Commands:": "Comandos:",
-  "Options:": "Op√ß√µes:",
-  "Examples:": "Exemplos:",
-  "boolean": "boolean",
-  "count": "contagem",
-  "string": "cadeia de caracteres",
-  "number": "n√∫mero",
-  "array": "arranjo",
-  "required": "requerido",
-  "default:": "padr√£o:",
-  "choices:": "escolhas:",
-  "generated-value": "valor-gerado",
-  "Not enough non-option arguments: got %s, need at least %s": "Argumentos insuficientes n√£o opcionais: Argumento %s, necess√°rio pelo menos %s",
-  "Too many non-option arguments: got %s, maximum of %s": "Excesso de argumentos n√£o opcionais: recebido %s, m√°ximo de %s",
-  "Missing argument value: %s": {
-    "one": "Falta valor de argumento: %s",
-    "other": "Falta valores de argumento: %s"
-  },
-  "Missing required argument: %s": {
-    "one": "Falta argumento obrigat√≥rio: %s",
-    "other": "Faltando argumentos obrigat√≥rios: %s"
-  },
-  "Unknown argument: %s": {
-    "one": "Argumento desconhecido: %s",
-    "other": "Argumentos desconhecidos: %s"
-  },
-  "Invalid values:": "Valores inv√°lidos:",
-  "Argument: %s, Given: %s, Choices: %s": "Argumento: %s, Dado: %s, Escolhas: %s",
-  "Argument check failed: %s": "Verifica√ß√£o de argumento falhou: %s",
-  "Implications failed:": "Implica√ß√µes falharam:",
-  "Not enough arguments following: %s": "Insuficientes argumentos a seguir: %s",
-  "Invalid JSON config file: %s": "Arquivo de configura√ß√£o em JSON esta inv√°lido: %s",
-  "Path to JSON config file": "Caminho para o arquivo de configura√ß√£o em JSON",
-  "Show help": "Mostra ajuda",
-  "Show version number": "Mostra n√∫mero de vers√£o",
-  "Arguments %s and %s are mutually exclusive" : "Argumentos %s e %s s√£o mutualmente exclusivos"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/pt.json;TTF:charsetI"
-utf-8;F:digest"%$X„¥‚w)1Ï`ôtèµ…ÏÓkHòOΩ^Œeµ˘:lengthië:dependencies_digest"%Å∫Õ(*ÑIÄßD7)è+ÑVª;]C:∆êÔ'&•:idI"Ed921065bfa57887913f50c10dbb4fc230166e713226c11e3893d754c33d63e90;F:
-mtimel+˚"b

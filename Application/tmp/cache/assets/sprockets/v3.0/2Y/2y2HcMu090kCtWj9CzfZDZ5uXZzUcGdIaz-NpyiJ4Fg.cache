@@ -1,28 +1,0 @@
-{:uriI"file://app/assets/vendor/jekyll/lib/site_template/index.html?type=text/html&id=99a45c69c32baf8822a67df8a74bf8d10828eabe0b99404a9c47a946aa6b481f:ET:load_pathI"app/assets/vendor;T:filenameI":app/assets/vendor/jekyll/lib/site_template/index.html;T:	nameI"#jekyll/lib/site_template/index;T:logical_pathI"(jekyll/lib/site_template/index.html;T:content_typeI"text/html;T:sourceI"ú---
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/vendor/jekyll/lib/site_template/index.html;TTF:charsetI"
-utf-8;F:digest"%cL§pÕtw&Lvæ)4ç·»^ T`:#·7Ì	pND:lengthiú:dependencies_digest"%cµÆ/\ Sgø~bÈÊóÃ6“¤¯ 7ì¿”°–L—%:idI"E99a45c69c32baf8822a67df8a74bf8d10828eabe0b99404a9c47a946aa6b481f;F:
-mtimel+äIb

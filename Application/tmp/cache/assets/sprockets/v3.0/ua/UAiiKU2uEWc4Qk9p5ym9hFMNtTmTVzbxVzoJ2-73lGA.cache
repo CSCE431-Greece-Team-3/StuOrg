@@ -1,45 +1,0 @@
-{:uriI"üfile://app/assets/vendor/gulp-copy/node_modules/yargs/locales/nl.json?type=application/json&id=c2c6b17dda8bd7e5107a589ccad5677580f68e63a621fd1ed27f5994db54017c:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/nl.json;T:	nameI",gulp-copy/node_modules/yargs/locales/nl;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/nl.json;T:content_typeI"application/json;T:sourceI"{
-  "Commands:": "Opdrachten:",
-  "Options:": "Opties:",
-  "Examples:": "Voorbeelden:",
-  "boolean": "boolean",
-  "count": "aantal",
-  "string": "text",
-  "number": "nummer",
-  "array": "lijst",
-  "required": "verplicht",
-  "default:": "standaard:",
-  "choices:": "keuzes:",
-  "aliases:": "aliassen:",
-  "generated-value": "gegenereerde waarde",
-  "Not enough non-option arguments: got %s, need at least %s": "Niet genoeg non-optie argumenten. Gekregen: %s, minstens nodig: %s",
-  "Too many non-option arguments: got %s, maximum of %s": "Te veel non-optie argumenten. Gekregen: %s, maximum: %s",
-  "Missing argument value: %s": {
-    "one": "Missing argument value: %s",
-    "other": "Missing argument values: %s"
-  },
-  "Missing required argument: %s": {
-    "one": "Missend verplichte argument: %s",
-    "other": "Missende verplichte argumenten: %s"
-  },
-  "Unknown argument: %s": {
-    "one": "Onbekend argument: %s",
-    "other": "Onbekende argumenten: %s"
-  },
-  "Invalid values:": "Ongeldige waardes:",
-  "Argument: %s, Given: %s, Choices: %s": "Argument: %s, Gegeven: %s, Keuzes: %s",
-  "Argument check failed: %s": "Argument check mislukt: %s",
-  "Implications failed:": "Implicaties mislukt:",
-  "Not enough arguments following: %s": "Niet genoeg argumenten na: %s",
-  "Invalid JSON config file: %s": "Ongeldig JSON configuratiebestand: %s",
-  "Path to JSON config file": "Pad naar JSON configuratiebestand",
-  "Show help": "Toon help",
-  "Show version number": "Toon versie nummer",
-  "Did you mean %s?": "Bedoelde u misschien %s?"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/nl.json;TTF:charsetI"
-utf-8;F:digest"%≠ÿ÷®É∞˘Ñ˛=RB;\¯mÃ{ânFdlkPÔiÃ°gP:lengthi:dependencies_digest"%,óˆˆ√ÉîJQµﬂ‘±J«[…
-Œùu|⁄´:[Ã8]H=:idI"Ec2c6b17dda8bd7e5107a589ccad5677580f68e63a621fd1ed27f5994db54017c;F:
-mtimel+b&b

@@ -1,44 +1,0 @@
-{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ru.json?type=application/json&id=7cddc09b31741d06495be8a03332f9337e50ca6d9614cd57fda5e40f7e611476:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/ru.json;T:	nameI",gulp-copy/node_modules/yargs/locales/ru;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/ru.json;T:content_typeI"application/json;T:sourceI"	{
-  "Commands:": "Команды:",
-  "Options:": "Опции:",
-  "Examples:": "Примеры:",
-  "boolean": "булевый тип",
-  "count": "подсчет",
-  "string": "строковой тип",
-  "number": "число",
-  "array": "массив",
-  "required": "необходимо",
-  "default:": "по умолчанию:",
-  "choices:": "возможности:",
-  "aliases:": "алиасы:",
-  "generated-value": "генерированное значение",
-  "Not enough non-option arguments: got %s, need at least %s": "Недостаточно неопционных аргументов: есть %s, нужно как минимум %s",
-  "Too many non-option arguments: got %s, maximum of %s": "Слишком много неопционных аргументов: есть %s, максимум допустимо %s",
-  "Missing argument value: %s": {
-    "one": "Не хватает значения аргумента: %s",
-    "other": "Не хватает значений аргументов: %s"
-  },
-  "Missing required argument: %s": {
-    "one": "Не хватает необходимого аргумента: %s",
-    "other": "Не хватает необходимых аргументов: %s"
-  },
-  "Unknown argument: %s": {
-    "one": "Неизвестный аргумент: %s",
-    "other": "Неизвестные аргументы: %s"
-  },
-  "Invalid values:": "Недействительные значения:",
-  "Argument: %s, Given: %s, Choices: %s": "Аргумент: %s, Данное значение: %s, Возможности: %s",
-  "Argument check failed: %s": "Проверка аргументов не удалась: %s",
-  "Implications failed:": "Данный аргумент требует следующий дополнительный аргумент:",
-  "Not enough arguments following: %s": "Недостаточно следующих аргументов: %s",
-  "Invalid JSON config file: %s": "Недействительный файл конфигурации JSON: %s",
-  "Path to JSON config file": "Путь к файлу конфигурации JSON",
-  "Show help": "Показать помощь",
-  "Show version number": "Показать номер версии",
-  "Did you mean %s?": "Вы имели в виду %s?"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ru.json;TTF:charsetI"
-utf-8;F:digest"%�3����cč~A�9�!m�絥�,DC�4�:lengthi	:dependencies_digest"%�kt�c�W!�)D�N�t(9�(������:idI"E7cddc09b31741d06495be8a03332f9337e50ca6d9614cd57fda5e40f7e611476;F:
-mtimel+b&b

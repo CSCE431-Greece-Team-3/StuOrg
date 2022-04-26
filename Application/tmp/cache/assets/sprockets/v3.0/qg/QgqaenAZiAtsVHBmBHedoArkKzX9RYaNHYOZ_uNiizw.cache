@@ -1,16 +1,0 @@
-{:uriI"›file://app/assets/vendor/jekyll/site/_includes/docs_contents_mobile.html?type=text/html&id=1a2c7d296830649f51e363b5d75f31c82d1e3d0b134f1d089fff116207ea7a60:ET:load_pathI"app/assets/vendor;T:filenameI"Fapp/assets/vendor/jekyll/site/_includes/docs_contents_mobile.html;T:	nameI"/jekyll/site/_includes/docs_contents_mobile;T:logical_pathI"4jekyll/site/_includes/docs_contents_mobile.html;T:content_typeI"text/html;T:sourceI"q<div class="docs-nav-mobile unit whole show-on-mobiles">
-  <select onchange="if (this.value) window.location.href=this.value">
-    <option value="">Navigate the docsâ€¦</option>
-    {% for section in site.data.docs %}
-    <optgroup label="{{ section.title }}">
-      {% include docs_option.html items=section.docs %}
-    </optgroup>
-    {% endfor %}
-  </select>
-</div>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Tfile-digest://app/assets/vendor/jekyll/site/_includes/docs_contents_mobile.html;TTF:charsetI"
-utf-8;F:digest"%üÙÍ­ô™¨t­)&üã‡l•Ÿ:åx¬øşÎ9Ì-tù9:lengthiq:dependencies_digest"%€ZL‹ÊàU?`
-;Nb{]ƒ¦Z.óİ”ª`'Ñ˜¥:idI"E1a2c7d296830649f51e363b5d75f31c82d1e3d0b134f1d089fff116207ea7a60;F:
-mtimel+äIb

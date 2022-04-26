@@ -1,17 +1,0 @@
-{:uriI"£file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/pirate.json?type=application/json&id=0af9eafa70eb8ef378035c1462308db860ff66b686a57a458b012897e3e1067e:ET:load_pathI"app/assets/vendor;T:filenameI"Gapp/assets/vendor/gulp-copy/node_modules/yargs/locales/pirate.json;T:	nameI"0gulp-copy/node_modules/yargs/locales/pirate;T:logical_pathI"5gulp-copy/node_modules/yargs/locales/pirate.json;T:content_typeI"application/json;T:sourceI"Æ{
-  "Commands:": "Choose yer command:",
-  "Options:": "Options for me hearties!",
-  "Examples:": "Ex. marks the spot:",
-  "required": "requi-yar-ed",
-  "Missing required argument: %s": {
-    "one": "Ye be havin' to set the followin' argument land lubber: %s",
-    "other": "Ye be havin' to set the followin' arguments land lubber: %s"
-  },
-  "Show help": "Parlay this here code of conduct",
-  "Show version number": "'Tis the version ye be askin' fer"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ufile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/pirate.json;TTF:charsetI"
-utf-8;F:digest"%D”’(VÝÜ³ëþëÂ*ÑŽèÊ!rt€Lä÷äH:?¬ÑÎ:lengthiÆ:dependencies_digest"%ëf.&òB\º9r.¿«©0ÖPe][¼ºÉé`›:idI"E0af9eafa70eb8ef378035c1462308db860ff66b686a57a458b012897e3e1067e;F:
-mtimel+b&b

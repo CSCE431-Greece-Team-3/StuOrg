@@ -1,39 +1,0 @@
-{:uriI"ìfile://app/assets/vendor/jekyll/site/_includes/anchor_links.html?type=text/html&id=d41dc8e2822065628e6cf972d100cc36ca0e88c0f17bc03d92a627e4d7412803:ET:load_pathI"app/assets/vendor;T:filenameI">app/assets/vendor/jekyll/site/_includes/anchor_links.html;T:	nameI"'jekyll/site/_includes/anchor_links;T:logical_pathI",jekyll/site/_includes/anchor_links.html;T:content_typeI"text/html;T:sourceI"<script>
-  var anchorForId = function (id) {
-    var anchor = document.createElement("a");
-    anchor.className = "header-link";
-    anchor.href      = "#" + id;
-    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
-    anchor.title = "Permalink";
-    return anchor;
-  };
-
-  var linkifyAnchors = function (level, containingElement) {
-    var headers = containingElement.getElementsByTagName("h" + level);
-    for (var h = 0; h < headers.length; h++) {
-      var header = headers[h];
-
-      if (typeof header.id !== "undefined" && header.id !== "") {
-        header.appendChild(anchorForId(header.id));
-      }
-    }
-  };
-
-  document.onreadystatechange = function () {
-    if (this.readyState === "complete") {
-      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
-      if (!contentBlock) {
-        return;
-      }
-      for (var level = 1; level <= 6; level++) {
-        linkifyAnchors(level, contentBlock);
-      }
-    }
-  };
-</script>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Lfile-digest://app/assets/vendor/jekyll/site/_includes/anchor_links.html;TTF:charsetI"
-utf-8;F:digest"%7'€ô*&:∑îc]√pZCÒ‘¬»€AS»≤=Ò∞V	:lengthi:dependencies_digest"%≠≈à{Åã
-≠ÀV˛ª4√/∏1k;ãY¢§fºO|´8BÕ:idI"Ed41dc8e2822065628e6cf972d100cc36ca0e88c0f17bc03d92a627e4d7412803;F:
-mtimel+b&b

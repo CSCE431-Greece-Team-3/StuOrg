@@ -1,22 +1,0 @@
-{:uriI"Šfile://app/assets/vendor/jekyll/site/_includes/top.html?type=text/html&id=e30ecfec10fe7b73155be70f8f49d71cdeebdf857a20c1eb833c9984369f474d:ET:load_pathI"app/assets/vendor;T:filenameI"5app/assets/vendor/jekyll/site/_includes/top.html;T:	nameI"jekyll/site/_includes/top;T:logical_pathI"#jekyll/site/_includes/top.html;T:content_typeI"text/html;T:sourceI"p<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
-  <link rel="alternate" type="application/rss+xml" title="Jekyll â€¢ Simple, blog-aware, static sites - Feed" href="/feed.xml">
-  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyllâ€™s master branch" href="{{ site.repository }}/commits/master.atom">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
-  <link rel="stylesheet" href="/css/screen.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <!--[if lt IE 9]>
-  <script src="/js/html5shiv.min.js"></script>
-  <script src="/js/respond.min.js"></script>
-  <![endif]-->
-</head>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Cfile-digest://app/assets/vendor/jekyll/site/_includes/top.html;TTF:charsetI"
-utf-8;F:digest"%»3^µbVž[º9&©ë•Æ:/7NSz<l;¦…Rªt¹»å:lengthip:dependencies_digest"%U’kin4Ëš`rbm)ëí®ë:˜ÿ}äXÍÛÞWs:idI"Ee30ecfec10fe7b73155be70f8f49d71cdeebdf857a20c1eb833c9984369f474d;F:
-mtimel+äIb

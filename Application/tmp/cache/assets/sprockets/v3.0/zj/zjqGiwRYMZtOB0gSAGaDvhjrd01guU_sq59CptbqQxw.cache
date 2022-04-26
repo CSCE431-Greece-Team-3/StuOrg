@@ -1,19 +1,0 @@
-{:uriI"—file://app/assets/vendor/jekyll/lib/site_template/_layouts/page.html?type=text/html&id=54941fe081a931d8aade480f38062bda491bf7d41afc345d72d9fdf198fd86a7:ET:load_pathI"app/assets/vendor;T:filenameI"Bapp/assets/vendor/jekyll/lib/site_template/_layouts/page.html;T:	nameI"+jekyll/lib/site_template/_layouts/page;T:logical_pathI"0jekyll/lib/site_template/_layouts/page.html;T:content_typeI"text/html;T:sourceI"Ñ---
-layout: default
----
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Pfile-digest://app/assets/vendor/jekyll/lib/site_template/_layouts/page.html;TTF:charsetI"
-utf-8;F:digest"%ƒ(u”Ğ¢9MË&şéu#"k;Áo¡öìCM°L©³:lengthiÑ:dependencies_digest"%·:FWøBËW7£úTfÒ<Á$Î¬ô›qi;Â3–3ÊÎ:idI"E54941fe081a931d8aade480f38062bda491bf7d41afc345d72d9fdf198fd86a7;F:
-mtimel+Dïa

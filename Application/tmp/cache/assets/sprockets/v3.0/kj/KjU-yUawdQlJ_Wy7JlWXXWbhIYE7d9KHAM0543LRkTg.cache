@@ -1,17 +1,0 @@
-{:uriI"›file://app/assets/vendor/jekyll/site/_includes/news_contents_mobile.html?type=text/html&id=447c1a2c60e08faaf8f1a8511c5c4cc2d74e71bb0b9d4938e6e97e78087c1b36:ET:load_pathI"app/assets/vendor;T:filenameI"Fapp/assets/vendor/jekyll/site/_includes/news_contents_mobile.html;T:	nameI"/jekyll/site/_includes/news_contents_mobile;T:logical_pathI"4jekyll/site/_includes/news_contents_mobile.html;T:content_typeI"text/html;T:sourceI"<div class="docs-nav-mobile unit whole show-on-mobiles">
-  <select onchange="if (this.value) window.location.href=this.value">
-    <option value="">Navigate the blogâ€¦</option>
-    <option value="/news/">Home</option>
-    <optgroup label="v1.x">
-      {% for post in site.posts %}
-      <option value="{{ post.url }}">{{ post.title }}</option>
-      {% endfor %}
-    </optgroup>
-  </select>
-</div>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Tfile-digest://app/assets/vendor/jekyll/site/_includes/news_contents_mobile.html;TTF:charsetI"
-utf-8;F:digest"%{&Ñ¥İ»>Åüôğ1€±€	Ñ[âŞ­
-X™ÃÚ:lengthi:dependencies_digest"%{èüİDiŠ‡ƒuüyÁ½[vò0=ZÔ9·iéå×Îš°š:idI"E447c1a2c60e08faaf8f1a8511c5c4cc2d74e71bb0b9d4938e6e97e78087c1b36;F:
-mtimel+û"b
