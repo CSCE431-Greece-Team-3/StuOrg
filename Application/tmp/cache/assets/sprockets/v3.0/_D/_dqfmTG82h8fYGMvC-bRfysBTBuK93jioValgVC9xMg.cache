@@ -1,0 +1,20 @@
+{:uriI"—file://app/assets/vendor/jekyll/lib/site_template/_layouts/post.html?type=text/html&id=364631d49d029b32c9cd389551b58ccaa38c36b6ac912d07b8bd0c503226b0b3:ET:load_pathI"app/assets/vendor;T:filenameI"Bapp/assets/vendor/jekyll/lib/site_template/_layouts/post.html;T:	nameI"+jekyll/lib/site_template/_layouts/post;T:logical_pathI"0jekyll/lib/site_template/_layouts/post.html;T:content_typeI"text/html;T:sourceI"›---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} â€¢ <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.meta %} â€¢ {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Pfile-digest://app/assets/vendor/jekyll/lib/site_template/_layouts/post.html;TTF:charsetI"
+utf-8;F:digest"%äNHÉ¬o­SlÜ~á‚ºÜ$©ñõ’$È@‡‹5Ç7:lengthi›:dependencies_digest"%‘¿Å5¶”ëQ^h;©düŽ_¡^b.Q?}÷š#ø):idI"E364631d49d029b32c9cd389551b58ccaa38c36b6ac912d07b8bd0c503226b0b3;F:
+mtimel+b&b

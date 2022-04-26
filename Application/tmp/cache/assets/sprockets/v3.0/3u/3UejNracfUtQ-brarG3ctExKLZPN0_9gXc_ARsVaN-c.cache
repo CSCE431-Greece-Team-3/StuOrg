@@ -1,0 +1,35 @@
+{:uriI"™file://app/assets/vendor/jquery.scrollbar/scrollbar.jquery.json?type=application/json&id=38ee7409348f7ac54937a93a046f243d203f7e7ea04e4cdf4c3408df4cfdfbee:ET:load_pathI"app/assets/vendor;T:filenameI"=app/assets/vendor/jquery.scrollbar/scrollbar.jquery.json;T:	nameI"&jquery.scrollbar/scrollbar.jquery;T:logical_pathI"+jquery.scrollbar/scrollbar.jquery.json;T:content_typeI"application/json;T:sourceI"‰{
+    "name": "scrollbar",
+    "title": "jQuery Scrollbar",
+    "description": "Cross-browser CSS customizable scrollbar with advanced features: standard scroll behavior in all browsers/devices, responsive design support (no fixed height or width required), horizontal/vertical scrollbar or both, external scrollbars, automatically hide/show scrollbars (if content/container size is changed) and more...",
+    "keywords": [
+        "scroll",
+        "scrollbar"
+    ],
+    "version": "0.2.11",
+    "author": {
+        "name": "Yuriy Khabarov",
+        "email": "13real008@gmail.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/gromo/jquery.scrollbar/blob/master/license-mit.txt"
+        },
+        {
+            "type": "GPLv2",
+            "url": "https://github.com/gromo/jquery.scrollbar/blob/master/license-gpl.txt"
+        }
+    ],
+    "homepage": "http://gromo.github.io/jquery.scrollbar/",
+    "download": "http://gromo.github.io/jquery.scrollbar/jquery.scrollbar.zip",
+    "demo": "http://gromo.github.io/jquery.scrollbar/demo/basic.html",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Kfile-digest://app/assets/vendor/jquery.scrollbar/scrollbar.jquery.json;TTF:charsetI"
+utf-8;F:digest"%yVsZdûoaÀâ‹Dq•bsæ’=>íğÖçïq:lengthi‰:dependencies_digest"%fÊ%¦t}’`nb¯.½Œ=„g!E×$·×ü¯-rQ:idI"E38ee7409348f7ac54937a93a046f243d203f7e7ea04e4cdf4c3408df4cfdfbee;F:
+mtimel+b&b

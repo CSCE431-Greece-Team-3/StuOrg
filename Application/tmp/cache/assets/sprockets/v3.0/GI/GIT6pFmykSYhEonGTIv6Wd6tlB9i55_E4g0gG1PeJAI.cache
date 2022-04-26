@@ -1,0 +1,38 @@
+{:uriI"”file://app/assets/vendor/jekyll/site/_includes/news_contents.html?type=text/html&id=9f219783ddeda6cca882363f9f4feb948ffd76327f80f8a0deb5ba4533514d7e:ET:load_pathI"app/assets/vendor;T:filenameI"?app/assets/vendor/jekyll/site/_includes/news_contents.html;T:	nameI"(jekyll/site/_includes/news_contents;T:logical_pathI"-jekyll/site/_includes/news_contents.html;T:content_typeI"text/html;T:sourceI"ó<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <ul>
+      <li class="{% if page.title == 'News' %}current{% endif %}">
+        <a href="/news/">All News</a>
+      </li>
+      <li class="{% if page.title == 'Releases' %}current{% endif %}">
+        <a href="/news/releases/">Jekyll Releases</a>
+      </li>
+    </ul>
+    <h4>Recent Releases</h4>
+    <ul>
+      {% for post in site.categories.release limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}">Version {{ post.version }}</a>
+      </li>
+      {% endfor %}
+      <li>
+        <a href="/docs/history/">History Â»</a>
+      </li>
+    </ul>
+    <h4>Other News</h4>
+    <ul>
+        {% for post in site.posts %}
+        {% unless post.categories contains 'release' %}
+        <li class="{% if page.title == post.title %}current{% endif %}">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+  </aside>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Mfile-digest://app/assets/vendor/jekyll/site/_includes/news_contents.html;TTF:charsetI"
+utf-8;F:digest"%QT,ÊËi÷-œ+=<W¨"7/bö‰çÇ‡«øŒö0_:lengthió:dependencies_digest"%rÚž‹S-ÝžÆ YK"eYmË,ç”ú½ÿ$õ`ù:idI"E9f219783ddeda6cca882363f9f4feb948ffd76327f80f8a0deb5ba4533514d7e;F:
+mtimel+äIb

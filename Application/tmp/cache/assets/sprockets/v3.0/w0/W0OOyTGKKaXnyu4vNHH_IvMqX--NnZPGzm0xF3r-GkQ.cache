@@ -1,0 +1,21 @@
+{:uriI"file://app/assets/vendor/jekyll/site/_includes/footer.html?type=text/html&id=06bf28b7539e394798c141b0b4cbcbfc58d3b54a4f0f3a32b8a1e43243804927:ET:load_pathI"app/assets/vendor;T:filenameI"8app/assets/vendor/jekyll/site/_includes/footer.html;T:	nameI"!jekyll/site/_includes/footer;T:logical_pathI"&jekyll/site/_includes/footer.html;T:content_typeI"text/html;T:sourceI"‰<footer role="contentinfo">
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are &copy;&nbsp;{{ site.time | date: '%Y' }} <a href="http://tom.preston-werner.com/">Tom Preston-Werner</a> under the terms of the <a href="{{ site.repository }}/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">
+          <img src="/img/footer-logo.png" width="100" height="30" alt="GitHub â€¢ Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://app/assets/vendor/jekyll/site/_includes/footer.html;TTF:charsetI"
+utf-8;F:digest"%ÕAÉ\·r¼¤g¬ïœÑjÌÉ Iªßp
+ï®é:lengthi‰:dependencies_digest"%ñb-À—IãÁ^îFz'ñ ïóHòş<3{^Ö:idI"E06bf28b7539e394798c141b0b4cbcbfc58d3b54a4f0f3a32b8a1e43243804927;F:
+mtimel+û"b

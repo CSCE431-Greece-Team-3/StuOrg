@@ -1,0 +1,13 @@
+{:uriI"îfile://app/assets/vendor/jekyll/site/_includes/docs_contents.html?type=text/html&id=dac4c759237c9b5ffaf77e1b3e0b927e55d1c7386e4af96bf50bf4ec8cc15e0e:ET:load_pathI"app/assets/vendor;T:filenameI"?app/assets/vendor/jekyll/site/_includes/docs_contents.html;T:	nameI"(jekyll/site/_includes/docs_contents;T:logical_pathI"-jekyll/site/_includes/docs_contents.html;T:content_typeI"text/html;T:sourceI"’<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    {% for section in site.data.docs %}
+    <h4>{{ section.title }}</h4>
+    {% include docs_ul.html items=section.docs %}
+    {% endfor %}
+  </aside>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Mfile-digest://app/assets/vendor/jekyll/site/_includes/docs_contents.html;TTF:charsetI"
+utf-8;F:digest"%CπoÁæ„0≥¢è÷Nﬂzx(Vº}mp+ÂzU˚z:lengthi’:dependencies_digest"%õSX#ƒ}`ıoQ∏‚< g»X œë°uëJqÇàWW:idI"Edac4c759237c9b5ffaf77e1b3e0b927e55d1c7386e4af96bf50bf4ec8cc15e0e;F:
+mtimel+˚"b

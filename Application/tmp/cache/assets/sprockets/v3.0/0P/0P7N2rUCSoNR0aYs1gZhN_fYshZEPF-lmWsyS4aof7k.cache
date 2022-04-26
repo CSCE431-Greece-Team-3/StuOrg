@@ -1,0 +1,22 @@
+{:uriI"˜file://app/assets/vendor/jekyll/site/_includes/primary-nav-items.html?type=text/html&id=b6b887334fbf0b53190d64ebb8ede6308d44cfd128d3b0c9562d6ae8f49fdee0:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/jekyll/site/_includes/primary-nav-items.html;T:	nameI",jekyll/site/_includes/primary-nav-items;T:logical_pathI"1jekyll/site/_includes/primary-nav-items.html;T:content_typeI"text/html;T:sourceI")<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/">Home</a>
+  </li>
+  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+  </li>
+  <li class="{% if page.author %}current{% endif %}">
+    <a href="/news/">News</a>
+  </li>
+  <li>
+    <a href="{{ site.help_url }}">Help</a>
+  </li>
+  <li>
+    <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
+  </li>
+</ul>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Qfile-digest://app/assets/vendor/jekyll/site/_includes/primary-nav-items.html;TTF:charsetI"
+utf-8;F:digest"%‰e†-ë¤É¬àôaÞ^ Ð,¸ª²Ú4o‘l*ùõ‰Ã~:lengthi):dependencies_digest"%‡F€*CWtª	,¸»®å£Ö¹Nî¸´¿û4)ÚõŠ0¼¨:idI"Eb6b887334fbf0b53190d64ebb8ede6308d44cfd128d3b0c9562d6ae8f49fdee0;F:
+mtimel+û"b

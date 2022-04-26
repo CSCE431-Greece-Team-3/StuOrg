@@ -1,0 +1,23 @@
+{:uriI"file://app/assets/vendor/jekyll/site/_includes/header.html?type=text/html&id=f4ed23ee9f684511e704e4cf0cb8a63ba5d6dd897322659d29bb40b4b90523d9:ET:load_pathI"app/assets/vendor;T:filenameI"8app/assets/vendor/jekyll/site/_includes/header.html;T:	nameI"!jekyll/site/_includes/header;T:logical_pathI"&jekyll/site/_includes/header.html;T:content_typeI"text/html;T:sourceI"<header role="banner">
+  <nav class="mobile-nav show-on-mobiles">
+    {% include primary-nav-items.html %}
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/">
+          <span class="sr-only">Jekyll</span>
+          <img src="/img/logo-2x.png" width="249" height="115" alt="Jekyll Logo">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      {% include primary-nav-items.html %}
+    </nav>
+  </div>
+</header>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://app/assets/vendor/jekyll/site/_includes/header.html;TTF:charsetI"
+utf-8;F:digest"%Eõ—/.ã=ß±ßiA_fÑW*w?å{M&ßòX¿:lengthi:dependencies_digest"%,#WTWjá‘ÔÏøß;Z¬T5UÂJ=éûS“±ê:idI"Ef4ed23ee9f684511e704e4cf0cb8a63ba5d6dd897322659d29bb40b4b90523d9;F:
+mtimel+äIb

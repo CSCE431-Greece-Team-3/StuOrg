@@ -1,0 +1,40 @@
+{:uriI"file://app/assets/vendor/lavalamp/lavalamp.jquery.json?type=application/json&id=5b7af887f5cdabede249ebea5c6e28ec8452781f80c4ba065a5393e8e3b54110:ET:load_pathI"app/assets/vendor;T:filenameI"4app/assets/vendor/lavalamp/lavalamp.jquery.json;T:	nameI"lavalamp/lavalamp.jquery;T:logical_pathI""lavalamp/lavalamp.jquery.json;T:content_typeI"application/json;T:sourceI"’{
+	
+"name": "lavalamp",
+"title": "Lava Lamp",
+"description": "Lava Lamp is a jQuery plugin for menus. It creates a div that moves when you hover over an element, giving it an elastic animation.",
+"keywords": [
+	"navigation",
+	"nav",
+	"animation",
+	"hover",
+	"CSS3 transitions",
+	"menu"
+],
+"version": "1.1.0",
+"author": {
+	"name": "Richard Hung",
+	"email": "richardhung111@gmail.com",
+	"url": "http://www.magicmediamuse.com/"
+},
+"licenses": [
+	{
+		"type": "Creative Commons Attribution-NonCommercial 3.0 Unported License",
+		"url": "http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+	}
+],
+"demo": "http://lavalamp.magicmediamuse.com/examples.php",
+"bugs": "https://github.com/Richard1320/Lava-Lamp/issues",
+"homepage": "http://lavalamp.magicmediamuse.com",
+"docs": "http://lavalamp.magicmediamuse.com",
+"download": "http://lavalamp.magicmediamuse.com/download.php",
+"dependencies": {
+"jquery": ">=1.7"
+}
+
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Bfile-digest://app/assets/vendor/lavalamp/lavalamp.jquery.json;TTF:charsetI"
+utf-8;F:digest"%å–ÕJ~{Æ¡€•ÕVeñ4—ö§§}ÆÈÇ¤Àø©¾:lengthi’:dependencies_digest"%sm&ür¾Šñ»hØÊîä	¹CÿjÍ¨•—çuâª::idI"E5b7af887f5cdabede249ebea5c6e28ec8452781f80c4ba065a5393e8e3b54110;F:
+mtimel+û"b

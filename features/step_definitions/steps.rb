@@ -71,3 +71,11 @@ end
 When /^I select checkbox "(.*?)"$/ do |cb|
     check(cb)
 end
+
+When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
+    select(value, :from => field)
+end
+
+Then /^(?:|I )goto the (.+)$/ do |page_name|
+    visit path_to(page_name)
+end

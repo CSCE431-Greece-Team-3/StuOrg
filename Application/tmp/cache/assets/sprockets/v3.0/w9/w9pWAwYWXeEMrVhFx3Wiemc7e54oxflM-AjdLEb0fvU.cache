@@ -1,0 +1,127 @@
+{:uriI"’file://app/assets/vendor/animate.css/animate-config.json?type=application/json&id=a8356d2c2e69793709e51f5bb50170e68e45d7d69d2fd66124f7474e9227d6ac:ET:load_pathI"app/assets/vendor;T:filenameI"6app/assets/vendor/animate.css/animate-config.json;T:	nameI"animate.css/animate-config;T:logical_pathI"$animate.css/animate-config.json;T:content_typeI"application/json;T:sourceI"ã{
+  "attention_seekers": {
+    "bounce": true,
+    "flash": true,
+    "pulse": true,
+    "rubberBand": true,
+    "shake": true,
+    "headShake": true,
+    "swing": true,
+    "tada": true,
+    "wobble": true,
+    "jello": true,
+    "heartBeat": true
+  },
+
+  "bouncing_entrances": {
+    "bounceIn": true,
+    "bounceInDown": true,
+    "bounceInLeft": true,
+    "bounceInRight": true,
+    "bounceInUp": true
+  },
+
+  "bouncing_exits": {
+    "bounceOut": true,
+    "bounceOutDown": true,
+    "bounceOutLeft": true,
+    "bounceOutRight": true,
+    "bounceOutUp": true
+  },
+
+  "fading_entrances": {
+    "fadeIn": true,
+    "fadeInDown": true,
+    "fadeInDownBig": true,
+    "fadeInLeft": true,
+    "fadeInLeftBig": true,
+    "fadeInRight": true,
+    "fadeInRightBig": true,
+    "fadeInUp": true,
+    "fadeInUpBig": true
+  },
+
+  "fading_exits": {
+    "fadeOut": true,
+    "fadeOutDown": true,
+    "fadeOutDownBig": true,
+    "fadeOutLeft": true,
+    "fadeOutLeftBig": true,
+    "fadeOutRight": true,
+    "fadeOutRightBig": true,
+    "fadeOutUp": true,
+    "fadeOutUpBig": true
+  },
+
+  "flippers": {
+    "flip": true,
+    "flipInX": true,
+    "flipInY": true,
+    "flipOutX": true,
+    "flipOutY": true
+  },
+
+  "lightspeed": {
+    "lightSpeedIn": true,
+    "lightSpeedOut": true
+  },
+
+  "rotating_entrances": {
+    "rotateIn": true,
+    "rotateInDownLeft": true,
+    "rotateInDownRight": true,
+    "rotateInUpLeft": true,
+    "rotateInUpRight": true
+  },
+
+  "rotating_exits": {
+    "rotateOut": true,
+    "rotateOutDownLeft": true,
+    "rotateOutDownRight": true,
+    "rotateOutUpLeft": true,
+    "rotateOutUpRight": true
+  },
+
+  "specials": {
+    "hinge": true,
+    "jackInTheBox": true,
+    "rollIn": true,
+    "rollOut": true
+  },
+
+  "zooming_entrances": {
+    "zoomIn": true,
+    "zoomInDown": true,
+    "zoomInLeft": true,
+    "zoomInRight": true,
+    "zoomInUp": true
+  },
+
+  "zooming_exits": {
+    "zoomOut": true,
+    "zoomOutDown": true,
+    "zoomOutLeft": true,
+    "zoomOutRight": true,
+    "zoomOutUp": true
+  },
+
+  "sliding_entrances": {
+    "slideInDown": true,
+    "slideInLeft": true,
+    "slideInRight": true,
+    "slideInUp": true
+  },
+
+  "sliding_exits": {
+    "slideOutDown": true,
+    "slideOutLeft": true,
+    "slideOutRight": true,
+    "slideOutUp": true
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Dfile-digest://app/assets/vendor/animate.css/animate-config.json;TTF:charsetI"
+utf-8;F:digest"%RXärúMð´ŽÄL{3ï½Ð<3}õ¹óµÄ?×‡_r:lengthiã:dependencies_digest"%xE²!êä8*:Æ›"Ý¤¬§x„¹
+@éþJ¯Ô-:idI"Ea8356d2c2e69793709e51f5bb50170e68e45d7d69d2fd66124f7474e9227d6ac;F:
+mtimel+û"b

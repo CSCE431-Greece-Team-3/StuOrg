@@ -1,0 +1,44 @@
+{:uriI"�file://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ko.json?type=application/json&id=97137e08fbc072b3b084032d991b95d9cf7b75c248f5b130eeb5a0ee7a68a174:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/ko.json;T:	nameI",gulp-copy/node_modules/yargs/locales/ko;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/ko.json;T:content_typeI"application/json;T:sourceI"{
+  "Commands:": "명령:",
+  "Options:": "옵션:",
+  "Examples:": "예시:",
+  "boolean": "여부",
+  "count": "개수",
+  "string": "문자열",
+  "number": "숫자",
+  "array": "배열",
+  "required": "필수",
+  "default:": "기본:",
+  "choices:": "선택:",
+  "aliases:": "별칭:",
+  "generated-value": "생성된 값",
+  "Not enough non-option arguments: got %s, need at least %s": "옵션이 아닌 인자가 충분치 않습니다: %s개를 받았지만, 적어도 %s개는 필요합니다",
+  "Too many non-option arguments: got %s, maximum of %s": "옵션이 아닌 인자가 너무 많습니다: %s개를 받았지만, %s개 이하여야 합니다",
+  "Missing argument value: %s": {
+    "one": "인자값을 받지 못했습니다: %s",
+    "other": "인자값들을 받지 못했습니다: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "필수 인자를 받지 못했습니다: %s",
+    "other": "필수 인자들을 받지 못했습니다: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "알 수 없는 인자입니다: %s",
+    "other": "알 수 없는 인자들입니다: %s"
+  },
+  "Invalid values:": "잘못된 값입니다:",
+  "Argument: %s, Given: %s, Choices: %s": "인자: %s, 입력받은 값: %s, 선택지: %s",
+  "Argument check failed: %s": "유효하지 않은 인자입니다: %s",
+  "Implications failed:": "옵션의 조합이 잘못되었습니다:",
+  "Not enough arguments following: %s": "인자가 충분하게 주어지지 않았습니다: %s",
+  "Invalid JSON config file: %s": "유효하지 않은 JSON 설정파일입니다: %s",
+  "Path to JSON config file": "JSON 설정파일 경로",
+  "Show help": "도움말을 보여줍니다",
+  "Show version number": "버전 넘버를 보여줍니다",
+  "Did you mean %s?": "찾고계신게 %s입니까?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/ko.json;TTF:charsetI"
+utf-8;F:digest"%y��/�Hܧ�އ�^6jOs5݃��8��-k�=:lengthi:dependencies_digest"%�wQk7S�w�]m����b�?��r���.�:idI"E97137e08fbc072b3b084032d991b95d9cf7b75c248f5b130eeb5a0ee7a68a174;F:
+mtimel+b&b

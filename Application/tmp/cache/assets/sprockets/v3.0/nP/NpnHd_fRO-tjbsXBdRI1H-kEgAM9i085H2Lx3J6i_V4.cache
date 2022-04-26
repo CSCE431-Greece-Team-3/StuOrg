@@ -1,0 +1,42 @@
+{:uriI"Ÿfile://app/assets/vendor/gulp-copy/node_modules/yargs/locales/nb.json?type=application/json&id=8b57b45b0443b87ab2690bc2eed300a4dbc29b0f5a1c23ee3071e95d649374d5:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/nb.json;T:	nameI",gulp-copy/node_modules/yargs/locales/nb;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/nb.json;T:content_typeI"application/json;T:sourceI"¼{
+  "Commands:": "Kommandoer:",
+  "Options:": "Alternativer:",
+  "Examples:": "Eksempler:",
+  "boolean": "boolsk",
+  "count": "antall",
+  "string": "streng",
+  "number": "nummer",
+  "array": "matrise",
+  "required": "obligatorisk",
+  "default:": "standard:",
+  "choices:": "valg:",
+  "generated-value": "generert-verdi",
+  "Not enough non-option arguments: got %s, need at least %s": "Ikke nok ikke-alternativ argumenter: fikk %s, trenger minst %s",
+  "Too many non-option arguments: got %s, maximum of %s": "For mange ikke-alternativ argumenter: fikk %s, maksimum %s",
+  "Missing argument value: %s": {
+    "one": "Mangler argument verdi: %s",
+    "other": "Mangler argument verdier: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Mangler obligatorisk argument: %s",
+    "other": "Mangler obligatoriske argumenter: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Ukjent argument: %s",
+    "other": "Ukjente argumenter: %s"
+  },
+  "Invalid values:": "Ugyldige verdier:",
+  "Argument: %s, Given: %s, Choices: %s": "Argument: %s, Gitt: %s, Valg: %s",
+  "Argument check failed: %s": "Argument sjekk mislyktes: %s",
+  "Implications failed:": "Konsekvensene mislyktes:",
+  "Not enough arguments following: %s": "Ikke nok fÃ¸lgende argumenter: %s",
+  "Invalid JSON config file: %s": "Ugyldig JSON konfigurasjonsfil: %s",
+  "Path to JSON config file": "Bane til JSON konfigurasjonsfil",
+  "Show help": "Vis hjelp",
+  "Show version number": "Vis versjonsnummer"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/nb.json;TTF:charsetI"
+utf-8;F:digest"%4JýêúÙ!‹ärî€«W¥Î`€pz¾¡]YÒq:lengthi¼:dependencies_digest"%ë‰>ý±æõ®ð¤ù¿,å¤‚‘Úþ»N,µ5y&:idI"E8b57b45b0443b87ab2690bc2eed300a4dbc29b0f5a1c23ee3071e95d649374d5;F:
+mtimel+b&b

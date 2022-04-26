@@ -1,0 +1,45 @@
+{:uriI"Ÿfile://app/assets/vendor/gulp-copy/node_modules/yargs/locales/id.json?type=application/json&id=75aa67a72e990e5d1a2690ca78d5dadafecc068fe68bf8c420a6dbf6f9f9710e:ET:load_pathI"app/assets/vendor;T:filenameI"Capp/assets/vendor/gulp-copy/node_modules/yargs/locales/id.json;T:	nameI",gulp-copy/node_modules/yargs/locales/id;T:logical_pathI"1gulp-copy/node_modules/yargs/locales/id.json;T:content_typeI"application/json;T:sourceI"Ë
+{
+  "Commands:": "Perintah:",
+  "Options:": "Pilihan:",
+  "Examples:": "Contoh:",
+  "boolean": "boolean",
+  "count": "jumlah",
+  "number": "nomor",
+  "string": "string",
+  "array": "larik",
+  "required": "diperlukan",
+  "default:": "bawaan:",
+  "aliases:": "istilah lain:",
+  "choices:": "pilihan:",
+  "generated-value": "nilai-yang-dihasilkan",
+  "Not enough non-option arguments: got %s, need at least %s": "Argumen wajib kurang: hanya %s, minimal %s",
+  "Too many non-option arguments: got %s, maximum of %s": "Terlalu banyak argumen wajib: ada %s, maksimal %s",
+  "Missing argument value: %s": {
+    "one": "Kurang argumen: %s",
+    "other": "Kurang argumen: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Kurang argumen wajib: %s",
+    "other": "Kurang argumen wajib: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Argumen tak diketahui: %s",
+    "other": "Argumen tak diketahui: %s"
+  },
+  "Invalid values:": "Nilai-nilai tidak valid:",
+  "Argument: %s, Given: %s, Choices: %s": "Argumen: %s, Diberikan: %s, Pilihan: %s",
+  "Argument check failed: %s": "Pemeriksaan argument gagal: %s",
+  "Implications failed:": "Implikasi gagal:",
+  "Not enough arguments following: %s": "Kurang argumen untuk: %s",
+  "Invalid JSON config file: %s": "Berkas konfigurasi JSON tidak valid: %s",
+  "Path to JSON config file": "Alamat berkas konfigurasi JSON",
+  "Show help": "Lihat bantuan",
+  "Show version number": "Lihat nomor versi",
+  "Did you mean %s?": "Maksud Anda: %s?"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/vendor/gulp-copy/node_modules/yargs/locales/id.json;TTF:charsetI"
+utf-8;F:digest"%&“Aê6'Ú3ÓÒD/ïï> ¾øAìôıªZÍjÈ‹l:lengthiË:dependencies_digest"%¦õrïª"·Ş—“&0ÑlÓB S¨±¹-	Èm¼:idI"E75aa67a72e990e5d1a2690ca78d5dadafecc068fe68bf8c420a6dbf6f9f9710e;F:
+mtimel+û"b
