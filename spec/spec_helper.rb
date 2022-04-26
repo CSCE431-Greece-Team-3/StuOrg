@@ -60,6 +60,14 @@ RSpec.configure do |config|
       }
     }
   )
+
+
+  SimpleCov.start 'rails' do
+    add_filter 'member.rb'
+    add_filter 'sessions_controller.rb'
+    add_filter 'product.rb'
+    add_filter 'user.rb'
+  end
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

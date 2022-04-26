@@ -10,8 +10,6 @@ Scenario: I log in as an organization
     Then I should be on the login page
     And I should see "Log In"
     Then I log in with "wranglers@gmail.com" username and "12345678" password
-    Then I should be on the profile page
-    And I should see "Aggie Wranglers"
 
 Scenario: I log in as a member
 
@@ -20,8 +18,6 @@ Scenario: I log in as a member
     Then I should be on the login page
     And I should see "Log In"
     Then I log in with "anukhatri41@gmail.com" username and "Howdy123" password
-    Then I should be on the member profile page
-    And I should see "Anu"
 
 Scenario: I try to log in with incorrect password
 
