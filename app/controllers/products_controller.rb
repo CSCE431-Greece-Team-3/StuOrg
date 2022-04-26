@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
     elsif params[:sort] == "Decreasing Price"
       @products = @products.order(:id).all.sort_by { |p| [p.price] }.reverse
     else
-      @products = Product.all
+      @products = Product.order(:id).all
     end
   end
 
