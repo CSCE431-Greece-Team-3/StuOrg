@@ -7,25 +7,26 @@ class Product < ActiveRecord::Base
     has_many :tags, through: :taggings
 
 
-
+    # finds products with the associated tag
     def self.tagged_with(name)
         Tag.find_by!(name: name).products
-        end
+    end
 
-        def self.tag_counts
+    # counts how many of a certain tag there are
+    def self.tag_counts
         Tag.select('tags.*, count(taggings.tag_id) as count').joins(:taggings).group('taggings.tag_id')
-        end
+    end
 
-        def tag_list
+    # creates the tag list when creating the product to display associated tags
+    def tag_list
         tags.map(&:name).join(', ')
-        end
+    end
 
-        def tag_list=(names)
+    # creates the tags associated with the product in the Tag table
+    def tag_list=(names)
         self.tags = names.split(',').map do |n|
             Tag.where(name: n.strip).first_or_create!
         end
     end
-   # validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
-    # attr_accessor :image
 
 end

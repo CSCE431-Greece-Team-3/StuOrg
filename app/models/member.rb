@@ -3,6 +3,7 @@ class Member < ActiveRecord::Base
     belongs_to :user
     has_many :users
 
+    # Google Authentication for Members
     def self.from_omniauth(auth)
         where(username: auth.info.email).first_or_initialize do |user|
             user.first = auth.info.first_name

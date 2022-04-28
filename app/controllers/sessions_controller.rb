@@ -3,6 +3,8 @@ class SessionsController < ApplicationController
 
   def new; end
 
+  # session feature for logging in organizations/members; first checks if it exists in the user table and then the member table
+  # if the user and passwords match, then the session will be created
   def create
     @user = User.find_by(username: params[:session][:username].downcase)
     @member = Member.find_by(username: params[:session][:username].downcase)
@@ -23,6 +25,7 @@ class SessionsController < ApplicationController
     end 
   end
 
+  # the log out feature 
   def destroy
     session[:id] = nil
     session[:user_type] = nil
@@ -31,6 +34,7 @@ class SessionsController < ApplicationController
     redirect_to '/'
   end
   
+  # Google Authentication for logging in orgs/members; also supports new account creation
   def omniauth
     if (auth2 == "user")
       @user = User.from_omniauth(auth)
@@ -65,10 +69,12 @@ class SessionsController < ApplicationController
   end
 
   private
+  # env variable for Google Auth
   def auth
     request.env['omniauth.auth']
   end
 
+  # env variable to get the type of account creation route
   def auth2
     request.env["omniauth.params"]["from"]
     
