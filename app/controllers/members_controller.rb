@@ -1,20 +1,13 @@
 class MembersController < ApplicationController
   # before_action :set_member, only: %i[ show edit update destroy ]
 
-  # GET /members or /members.json
+  # gets all of the members created
   def index
     @members = Member.all
   end
 
   # GET /members/1 or /members/1.json
   def show
-    # if current_member.users_id.empty?
-    #   @org_name = ""
-    # else 
-    #   @org_num = current_member.users_id
-    #   @org = User.find_by_id(@org_num)
-    #   @org_name = @org.first
-    # end
   end
 
   # GET /members/new
@@ -27,19 +20,19 @@ class MembersController < ApplicationController
     @member = Member.find_by_id(session[:id])
   end
 
-  # POST /members or /members.json
+  # creates the member with the specified username, password, first name, and last name
   def create
     @member = Member.new(member_params)
-    if /\A[^@\s]+@[^@\s]+\z/.match(@member.username) == nil 
+    if /\A[^@\s]+@[^@\s]+\z/.match(@member.username) == nil # checks if the username is a valid email address
         flash[:notice] = "Invalid Username"
         redirect_to '/signup_member'
-    elsif Member.find_by(username: @member.username)
+    elsif Member.find_by(username: @member.username) # checks to see if the username already exists
         flash[:notice] = "Username already exists"
         redirect_to '/signup_member'
-    elsif @member.password.length < 8
+    elsif @member.password.length < 8 # checks to ensure that the password length is at least 8 characters long
         flash[:notice] = "Password length should be 8 or longer."
         redirect_to '/signup_member'
-    else @member.valid?
+    else @member.valid? # if has all valid parameters, create the member in the table
         @member = Member.create(params.require(:member).permit(:first, :last, :username, :password))
         @member.update_attribute(:referral_code, rand(36**8).to_s(36))
         @member.update_attribute(:num_referred, 0)
@@ -49,7 +42,7 @@ class MembersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /members/1 or /members/1.json
+  # edits the member based on the parameters provided by the form
   def update
     @member = Member.find_by_id(session[:id])
     # user_params = params.require(:user).permit(:username, :password, :first, :last)
@@ -64,7 +57,7 @@ class MembersController < ApplicationController
 
 
   
-  # DELETE /members/1 or /members/1.json
+  # deletes the chosen member from the table
   def destroy
     @member = Member.find_by_id(session[:id])
     @member.destroy
@@ -73,12 +66,7 @@ class MembersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    # def set_member
-    #   @member = Member.find(params[:id])
-    # end
-
-    # Only allow a list of trusted parameters through.
+    # list of trusted parameters associated with the member
     def member_params
       params.require(:member).permit(:username, :password, :first, :last)
     end

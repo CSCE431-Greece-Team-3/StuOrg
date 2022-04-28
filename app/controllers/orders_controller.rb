@@ -2,7 +2,10 @@ class OrdersController < ApplicationController
     require 'paypal-checkout-sdk'
     skip_before_action :verify_authenticity_token
     before_action :paypal_init, :except => [:index]
+
     def index; end
+
+    # sends total price of the cart to Paypal, creates order in the Orders Table
     def create_order
         price = session[:total]
         request = PayPalCheckoutSdk::Orders::OrdersCreateRequest::new
@@ -30,21 +33,25 @@ class OrdersController < ApplicationController
             puts ioe.headers["debug_id"]
         end
       end
-      def capture_order
-        request = PayPalCheckoutSdk::Orders::OrdersCaptureRequest::new params[:order_id]
-        begin
-          response = @client.execute request
-          order = Order.find_by :token => params[:order_id]
-          order.paid = response.result.status == 'COMPLETED'
-          if order.save
-            return render :json => {:status => response.result.status}, :status => :ok
-          end
-        rescue PayPalHttp::HttpError => ioe
-            puts ioe.status_code
-            puts ioe.headers["paypal-debug-id"]
+
+    # Finishes the order if credit card is inputted
+    def capture_order
+      request = PayPalCheckoutSdk::Orders::OrdersCaptureRequest::new params[:order_id]
+      begin
+        response = @client.execute request
+        order = Order.find_by :token => params[:order_id]
+        order.paid = response.result.status == 'COMPLETED'
+        if order.save
+          return render :json => {:status => response.result.status}, :status => :ok
         end
+      rescue PayPalHttp::HttpError => ioe
+          puts ioe.status_code
+          puts ioe.headers["paypal-debug-id"]
       end
+    end
+    
     private
+    # Paypal keys
     def paypal_init
       require 'paypal-checkout-sdk'
       client_id = 'AXuV_3pV6aDDNOmbpjRwDTEuVhhMSd65UWt-WyQdj0jQE68X4E7ZLJu4X0HKdu02JYIh7TMMb_ok9Gy-'

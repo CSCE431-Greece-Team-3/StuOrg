@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
     has_many :products, dependent: :destroy
     has_many :members
     # validates :username, presence: true, uniqueness: true, format: { with: /\A[^@\s]+@[^@\s]+\z/, message: 'Invalid email' }
+    # Google Authentication for Users
     def self.from_omniauth(auth)
         where(username: auth.info.email).first_or_initialize do |user|
             user.first = auth.info.name

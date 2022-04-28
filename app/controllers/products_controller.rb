@@ -2,12 +2,13 @@ class ProductsController < ApplicationController
   skip_before_action :verify_authenticity_token
   before_action :set_product, :initialize_cart, only: %i[ show edit update destroy ]
 
-  # GET /products or /products.json
+  # gets the products owned by the organizations
   def index
     @user = User.find_by_id(session[:id])
     @products = @user.products.all
   end
 
+  # handles the marketplace and the sorting functionality; order(id) to ensure that the order remains the same after adding to cart
   def marketplace
     @tags = Tag.all
     @users = User.all
@@ -21,11 +22,13 @@ class ProductsController < ApplicationController
     end
   end
 
+  # creates the cart when entering the marketplace 
   def initialize_cart
     session[:cart] ||= []
     session[:referral] = nil
   end
 
+  # calculates the total item value in the cart to give to front end, checks if a valid referral code was entered
   def view_cart
     @cart_ids = session[:cart]
     @total = 0
@@ -43,6 +46,7 @@ class ProductsController < ApplicationController
     end
   end 
 
+  # adds the item pressed by the user to the cart and also increments the number of referred products if a valid referral code was entered
   def add_to_cart
     session[:cart] ||= []
     session[:cart] << params[:product_id]
@@ -59,6 +63,7 @@ class ProductsController < ApplicationController
     redirect_to "/marketplace"
   end
 
+  # removes the item pressed by the user to the cart and also deccrements the number of referred products if a valid referral code was entered
   def remove_from_cart
     session[:cart].delete_at(session[:cart].index(params[:product_id]))
     @product = Product.find_by_id(params[:product_id])
@@ -74,11 +79,13 @@ class ProductsController < ApplicationController
     redirect_to "/view_cart"
   end
 
+  # sets referral in session hash
   def set_referral
     session[:referral] = params[:referral_code]
     redirect_to "/marketplace"
   end
 
+  # gets products where the organization matches the choice
   def org_marketplace
     if params[:org_id] == nil
       redirect_to "/marketplace"
@@ -86,6 +93,7 @@ class ProductsController < ApplicationController
     @products = Product.where(user_id: params[:org_id])
   end
 
+  # gets products where the tags matches the choice
   def tag_marketplace
     if params[:tag_id] == nil
       redirect_to "/marketplace"
@@ -109,7 +117,7 @@ class ProductsController < ApplicationController
   def edit
   end
 
-  # POST /products or /products.json
+  # creates the product with the following inputs: title, image, price, tags, and quantity
   def create
     @user = User.find_by_id(session[:id])
     product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids, :quantity)
@@ -126,7 +134,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /products/1 or /products/1.json
+  # updates the product model with the user's specifications
   def update
     product_params = params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids, :quantity)
     respond_to do |format|
@@ -140,7 +148,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # DELETE /products/1 or /products/1.json
+  # deletes the chosen product model from the database
   def destroy
     @user = User.find_by_id(session[:id])
     @product = @user.products.find(params[:id])
@@ -152,18 +160,9 @@ class ProductsController < ApplicationController
     end
   end
 
-  # def product_params
-  #   params.require(:product).permit(:title, :image)
-  # end
-
   private
-    # Use callbacks to share common setup or constraints between actions.
+    # Sets the current product 
     def set_product
       @product = Product.find(params[:id])
     end
-
-    # # Only allow a list of trusted parameters through.
-    # def product_params
-    #   params.require(:product).permit(:title, :image, :price, :tag_list, :tag, { tag_ids: [] }, :tag_ids, :quantity)
-    # end
 end
