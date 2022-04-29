@@ -5,4 +5,7 @@ class ArticlesController < ApplicationController
   def index
     @products = Product.all
   end
+
+  def internal_server_error
+  end
 end
