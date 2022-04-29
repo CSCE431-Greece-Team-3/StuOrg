@@ -5,9 +5,7 @@ class DashboardsController < ApplicationController
     # gets the associated products for the logged in organization
     def dashboard
       @user = User.find_by_id(session[:id])
-      if @user
-        @products = @user.products.all
-      end
+      @products = @user.products.all
     end
  
     # gets the associated members for the logged in organization
