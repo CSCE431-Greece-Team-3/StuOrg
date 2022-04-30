@@ -81,6 +81,7 @@ RSpec.describe ProductsController, type: :controller do
     describe "gets" do
         it "the organization's products" do
             get :index, session: {:id => @user.id}
+            expect(session[:id]).to eq(@user.id)
         end
     end
 

@@ -10,6 +10,7 @@ RSpec.describe OrdersController, type: :controller do
     describe "creates" do 
         it "the order" do 
             get :create_order, session: {:total => 100.00}
+            expect(session[:total]).to eq(100.00)
         end
     end
 

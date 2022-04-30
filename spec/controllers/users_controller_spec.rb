@@ -86,6 +86,7 @@ RSpec.describe UsersController, type: :controller do
     describe "gets" do 
         it "the index" do 
             get :index, session: {:id => @user.id}
+            expect(session[:id]).to eq(@user.id)
         end
     end
 
@@ -99,6 +100,7 @@ RSpec.describe UsersController, type: :controller do
     describe "removes" do
         it "the member" do 
             delete :remove_member, params: {:id => @member.id}
+            expect(flash[:notice]).to match("Member was removed from organization.")
         end
     end
 end

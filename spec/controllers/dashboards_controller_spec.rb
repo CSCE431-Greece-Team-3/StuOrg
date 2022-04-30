@@ -16,12 +16,14 @@ RSpec.describe DashboardsController, type: :controller do
     describe "creates" do
         it "the dashboard" do
             get :dashboard, session: {:id => @user.id}
+            expect(session[:id]).to eq(@user.id)
         end
     end
 
     describe "gets" do
         it "the members" do
             get :members, session: {:id => @user.id}
+            expect(session[:id]).to eq(@user.id)
         end
     end
 end
