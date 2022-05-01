@@ -25,6 +25,9 @@ module NavigationHelpers
     when /the login page/
       '/sign_in'
 
+    when /the products page/
+      '/products'
+
     when /the profile page/
       '/profile'
 
