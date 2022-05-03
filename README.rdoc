@@ -1,28 +1,10 @@
-== README
+Mporium, A Student Organization Marketplace:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run the application on localhost, first verify that Ruby 2.6.6 is installed. Then, install PostgreSQL on to your machine with sudo apt install postgresql postgresql-contrib and ensure that a user exists called postgres with the password ‘12345’. Once Ruby is installed, clone the repository via the git clone command. If one wants to use an alternate username and password for PostgreSQL, the user can change their credentials in the config/database.yml file.
 
-Things you may want to cover:
+To skip over the reset of the following paragraph, the user can consider running the setup.sh script by issuing the command `bash setup.sh`. If not, continue following the steps in the rest of the paragraph. Now, run bundle install and rails webpacker:install afterwards. Then, run rails assets:clobber and rails webpacker:compile to generate the necessary JavaScript files. Now, run git reset ---hard origin/main to reset the webpacker configuration to the files in the GitHub. Then, run rake db:migrate to run the migration files and create the data tables requires to hold the data for the application and rake db:seed to populate the database. Then refer to the Key Generation section below to generate the 3 sets of keys. Lastly, run rails server to prop the application on to port 3000. To access, the local version of the application go to localhost:3000. 
 
-* Ruby version
+To deploy the application to Heroku, the proper Procfile is already provided in the GitHub repository. To clone the repository, run the respective git clone command. Then, set up a Heroku Postgres Server via https://devcenter.heroku.com/articles/heroku-postgresql and set the given credentials to the Heroku server in the config/database.yml file. Then refer to the Key Generation section below to generate the 3 sets of keys. Lastly, the user may push the application to a Heroku repository and access it at the URL: myappname.herokuapp.com. To access the data on Mporium, download the Data from https://drive.google.com/drive/folders/14igSOKywaXnrZRCWG\_vdo5lEKOnM7S90?usp=sharing. To restore the Heroku Database use `pg\_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump`. To restore the Amazon S3 Storage data, upload the files back to your respective server.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+{Key Generation}
+There are three sets of keys required to run the application. The first set of keys required are the AWS keys generated for the S3 server. To generate these keys, please create an account on AWS at https://aws.amazon.com/. Once created, go to the IAM console and create a user and a set of keys. A access key id and secret access key are created and should be copied into the config/storage.yml file where it states `access\_key\_id` and `secret\_access\_key`. Ensure that the respective bucket and region are filled in as well based on your configuration of Amazon S3. Then, a set of Google Cloud Platform keys will need to be created as well via https://console.cloud.google.com/getting-started}{https://console.cloud.google.com/getting-started. Once again, go to the IAM console to generate a GOOGLE\_CLIENT\_ID and GOOGLE\_CLIENT\_SECRET and copy paste the values into the .env file. The last set of keys are for the PayPal checkout function. To generate these set of keys go to https://developer.paypal.com/, and create a developer account. Then, go to Accounts and create a Sandbox Business account. Then, click on My Apps & Credentials and the client\_id and client\_secret will be provided. Copy and paste these values into the order\_controller.rb file where it says `client\_id` and `client\_secret`.
